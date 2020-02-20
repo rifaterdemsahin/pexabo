@@ -1,0 +1,340 @@
+/*---------------------------------------------------------------------
+    Desktop
+-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .blog-sidebar {
+        padding: 30px 15px;
+    }
+}
+
+
+/*---------------------------------------------------------------------
+    Tablet Devices
+----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .navbar-brand img {
+        max-width: 80px;
+    }
+    #welcome-area {
+        padding: 50px 0 0;
+    }
+    .welcome-content {
+        padding: 18% 0 0;
+    }
+    .page-heading {
+        padding: 35px 0 30px;
+    }
+    .blog-sidebar {
+        padding: 30px 30px 0;
+        margin: 0 0 40px;
+    }
+    .portfolio-info {
+        margin: 30px 0 0;
+    }
+}
+
+
+/*---------------------------------------------------------------------
+    Large Screen Mobile Devices
+-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .navbar-brand img {
+        max-width: 80px;
+    }
+    #welcome-area {
+        padding: 30px 0 60px;
+    }
+    .welcome-content {
+        padding: 50px 0 0;
+    }
+    .welcome-content h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .welcome-btn {
+        margin: 25px 0 0;
+    }
+    .welcome-btn a {
+        padding: 8px 14px;
+    }
+    .heading h2 {
+        margin: 0 0 30px;
+    }
+    .about-social h5 {
+        margin: 20px 0 10px;
+    }
+    .about-content a {
+        padding: 8px 14px;
+        margin: 10px 0 24px;
+    }
+    .about-contact-info p {
+        margin: 0 0 5px;
+        font-weight: 500;
+    }
+    #about-area,
+    #blog-area,
+    #call-to-action {
+        padding: 60px 0 70px;
+    }
+    #skill-area {
+        padding: 60px 0 50px;
+    }
+    #services-area {
+        padding: 60px 0 40px;
+    }
+    #portfolio-area {
+        padding: 60px 0 65px;
+    }
+    #testimonial-area {
+        padding: 60px 0 115px;
+    }
+    #contact-area {
+        padding: 60px 0;
+    }
+    .page-heading {
+        padding: 35px 0 30px;
+    }
+    .page-heading h2 {
+        margin: 0;
+    }
+    .blog-wrap {
+        padding: 0 0 65px;
+    }
+    .blog-sidebar {
+        padding: 30px 30px 0;
+        margin: 0 0 40px;
+    }
+    .recent-post-cont {
+        overflow: hidden;
+        margin: 10px 0;
+    }
+    .blog-details-wrap,
+    .portfolio-details-wrap {
+        padding: 0 0 70px;
+    }
+    .comment-form h3 {
+        margin: 30px 0 30px;
+    }
+    .portfolio-info {
+        margin: 30px 0 0;
+    }
+}
+
+
+/*----------------------------------------------------------------------
+   Medium Screen Mobile Devices
+------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 34px
+    }
+    .navbar-brand img {
+        max-width: 80px;
+    }
+    #welcome-area {
+        padding: 30px 0 60px;
+    }
+    .welcome-content {
+        padding: 50px 0 0;
+    }
+    .welcome-content h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .cd-headline.clip {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .welcome-btn {
+        margin: 25px 0 0;
+    }
+    .welcome-btn a {
+        padding: 8px 14px;
+    }
+    .heading h2 {
+        margin: 0 0 20px;
+    }
+    .about-social h5 {
+        margin: 20px 0 10px;
+    }
+    .about-content a {
+        padding: 8px 14px;
+        margin: 10px 0 24px;
+    }
+    .about-contact-info p {
+        margin: 0 0 5px;
+        font-weight: 500;
+    }
+    #about-area,
+    #blog-area,
+    #call-to-action {
+        padding: 50px 0 60px;
+    }
+    #skill-area {
+        padding: 50px 0 40px;
+    }
+    #services-area {
+        padding: 50px 0 30px;
+    }
+    #portfolio-area {
+        padding: 50px 0 55px;
+    }
+    .portfolio-menu button {
+        padding: 4px 8px;
+        margin: 0;
+    }
+    #testimonial-area {
+        padding: 50px 0 105px;
+    }
+    #contact-area {
+        padding: 50px 0;
+    }
+    .page-heading {
+        padding: 25px 0 20px;
+    }
+    .page-heading h2 {
+        margin: 0;
+    }
+    .blog-wrap {
+        padding: 0 0 45px;
+    }
+    .blog-sidebar {
+        padding: 30px 15px 0;
+        margin: 0 0 40px;
+    }
+    .recent-post-cont {
+        overflow: hidden;
+        margin: 10px 0;
+    }
+    .blog-details-wrap,
+    .portfolio-details-wrap {
+        padding: 0 0 60px;
+    }
+    .comment-form h3 {
+        margin: 20px 0 30px;
+    }
+    .portfolio-info {
+        margin: 30px 0 0;
+    }
+}
+
+
+/*----------------------------------------------------------------------
+    Small Screen Mobile Devices
+-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 34px
+    }
+    .navbar-brand img {
+        max-width: 80px;
+    }
+    #welcome-area {
+        padding: 30px 0 60px;
+    }
+    .welcome-content {
+        padding: 50px 0 0;
+    }
+    .welcome-content h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .cd-headline.clip {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .welcome-btn {
+        margin: 25px 0 0;
+    }
+    .welcome-btn a {
+        padding: 8px 14px;
+    }
+    .heading h2 {
+        margin: 0 0 20px;
+    }
+    .about-social h5 {
+        margin: 20px 0 10px;
+    }
+    .about-content a {
+        padding: 8px 14px;
+        margin: 10px 0 24px;
+    }
+    .about-contact-info p {
+        margin: 0 0 5px;
+        font-weight: 500;
+    }
+    #about-area,
+    #blog-area,
+    #call-to-action {
+        padding: 50px 0 60px;
+    }
+    #skill-area {
+        padding: 50px 0 40px;
+    }
+    #services-area {
+        padding: 50px 0 30px;
+    }
+    #portfolio-area {
+        padding: 50px 0 55px;
+    }
+    .portfolio-menu button {
+        padding: 4px 8px;
+        margin: 0;
+    }
+    #testimonial-area {
+        padding: 50px 0 105px;
+    }
+    #contact-area {
+        padding: 50px 0;
+    }
+    .page-heading {
+        padding: 25px 0 20px;
+    }
+    .page-heading h2 {
+        margin: 0;
+    }
+    .blog-wrap {
+        padding: 0 0 45px;
+    }
+    .blog-sidebar {
+        padding: 30px 15px 0;
+        margin: 0 0 40px;
+    }
+    .recent-post-cont {
+        overflow: hidden;
+        margin: 10px 0;
+    }
+    .blog-details-wrap,
+    .portfolio-details-wrap {
+        padding: 0 0 60px;
+    }
+    .comment-form h3 {
+        margin: 20px 0 30px;
+    }
+    .portfolio-info {
+        margin: 30px 0 0;
+    }
+}
