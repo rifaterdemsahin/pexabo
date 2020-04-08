@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $("#mySubmit").click(function() {
+
+                $("#txtoutput").val("XXXX"); 
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <header id="header">Cover Letter Generator</header>
+    <br>
+    <form name="example" action="#" onsubmit="checkit(); return false">
+        <table class="form">
+        <tr>
+        <td>Candidate</td>
+        <td><input name="txtCandidate" value="Erdem" /></td>
+              </tr>
+              <tr>
+                <td>Start Text</td>
+                <td><textarea name="txtStart" cols="50" rows="10">Erdem is an IT contractor who has worked in diverse projects in the United Kingdom. I am looking for a new role that will allow me to help the company to reach its goals.I meet the requirements of your organisation as I will be working for based on the following skills which are directly and indirectly related to the task. I am passionate about building technology systems which further enabled me to be qualified in my field." </textarea></td>
+              </tr>
+        
+        <tr>
+        <td>Which company to apply ?</td>
+        <td><input name="punishedname" /></td>
+        </tr>
+        
+        <tr>
+        <td>Type ?</td>
+        <td><select name="myType">
+        <option value='' selected="selected">--- Select ---</option>
+        <option value="long">long</option>
+        <option value="medium">medium</option>
+        <option value="short">short</option>
+        </select>
+        </td></tr>
+        
+        <tr>
+        <td>Role?</td>
+        <td><input name="role" />
+        </tr>
+        <tr>
+            <td>End Text</td>
+            <td><textarea name="txtEnd" cols="50" rows="10">I believe I would be a great candidate as I apply myself to all occasions, can work with people of different backgrounds and levels of authority. I have the necessary experience to work on this project and create value.Please feel free to give me a call if you have any questions you would like to discuss </textarea></td>
+          </tr>
+        
+          <tr>
+            <td>PS (Extra)</td>
+            <td><textarea name="txtPS" cols="50" rows="10"> </textarea></td>
+          </tr>
+        <tr><td colspan="2"><input id="mySubmit" value="Create Cover Letter" /><br />
+        <input type="reset" /></td></tr>
+        <tr><td colspan="2"><textarea cols="100" rows="50" name="txtoutput" id="txtoutput">Cover letter will be written here</textarea></td></tr>
+        </table>
+</body>
+
+</html>
