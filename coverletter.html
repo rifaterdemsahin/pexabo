@@ -125,11 +125,11 @@
                 result = result.concat("<ul>");
                 $('#mytable').find(':checkbox:checked').each(function() {
                     var chk = $(this).attr("myAnswer");
-                    var ref = $(this).attr("myRefID");
+                    // var ref = $(this).attr("myRefID");
                     result = result.concat("<li>");
                     result = result.concat(chk);
-                    result = result.concat("*");
-                    result = result.concat(ref);
+                    // result = result.concat("*");
+                    // result = result.concat(ref);
                     result = result.concat("</li>");
                 });
                 result = result.concat("</ul>");
@@ -140,25 +140,34 @@
                 result = result.concat("</br><strong>References</strong></br>");
 
                 result = result.concat("<ul>");
-                $('#mytable').find(':checkbox:checked').each(function() {
+                // $('#mytable').find(':checkbox:checked').each(function() {
 
-                    var chk = $(this).attr("myReference");
-                    if (chk != undefined) {
-                        var ref = $(this).attr("myRefID");
-                        result = result.concat("<li>");
-                        result = result.concat("*");
-                        result = result.concat(ref);
-                        result = result.concat("");
-                        result = result.concat(chk);
-                        result = result.concat("</li>");
-                    }
-                });
+                //     var chk = $(this).attr("myReference");
+                //     if (chk != undefined) {
+                //         var ref = $(this).attr("myRefID");
+                //         result = result.concat("<li>");
+                //         result = result.concat("*");
+                //         result = result.concat(ref);
+                //         result = result.concat("");
+                //         result = result.concat(chk);
+                //         result = result.concat("</li>");
+                //     }
+                // });
 
                 result = result.concat("<li>");
                 result = result.concat("*");
                 result = result.concat("https://www.linkedin.com/in/rifaterdemsahin/");
                 result = result.concat("</li>");
                 result = result.concat("</ul>");
+
+                result = result.concat("</br></br>");
+                result = result.concat("PS:</br>");
+                var txtPS = $.trim($("#txtPS").val());
+                result = result.concat(txtPS);
+                result = result.concat("</br></br>");
+                var txtVisa = $.trim($("#txtVisa").val());
+                result = result.concat(txtVisa);
+
                 $("#txtoutput").html(result);
                 $("#mytableHolder").hide();
                 $("#myRewrite").show();
@@ -450,12 +459,12 @@
 
             <tr>
                 <td>PS (Extra)</td>
-                <td><textarea name="txtPS" cols="50" rows="10">I am open for offers. I am focused on contracting opportunities.I welcome this oppurtunity and looking forward to hear from you.</textarea>
+                <td><textarea id="txtPS" cols="50" rows="10">I am focused on getting contracting offers. I welcome this oppurtunity and looking forward to hear from you.</textarea>
                 </td>
             </tr>
             <tr>
                 <td>Visa</td>
-                <td><textarea name="txtVisa" cols="50" rows="10">I hold an ECAA visa to do business in United Kingdom.I have been contracting in the UK from 2017 </textarea>
+                <td><textarea id="txtVisa" cols="50" rows="10">I hold an ECAA visa to do business in United Kingdom.I have been contracting in the UK from 2017 </textarea>
                 </td>
             </tr>
             <tr>
