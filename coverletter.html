@@ -2,6 +2,20 @@
 <html lang="zxx">
 
 <head>
+    <title>Cover Letter Generator</title>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -25,7 +39,8 @@
 </head>
 
 <body>
-    <header id="header">Cover Letter Generator</header>
+    <header id="header"><strong>COVER LETTER GENERATOR</strong> </header>
+    <hr>
     <br>
     <form name="example" action="#" onsubmit="checkit(); return false">
         <table id="mytable" class="form">
@@ -61,7 +76,7 @@
             </tr>
 
             <tr>
-                <td>Skills Selection</td>
+                <td><strong>Matching Skills Selection</strong></td>
                 <td>
             </tr>
 
@@ -84,8 +99,10 @@
             <tr>
                 <td>Pipelines</td>
                 <td><input id="pipelines" type="checkbox" myAnswer="I have delivered more than 10+ pipelines and helped the teams to shorten the software development time.">
-                    <td>linux</td>
+                    <td>Linux</td>
                     <td><input id="linux" type="checkbox" myAnswer="I have worked on multiple Linux projects including RedBox, MMT and Concentra contracts">
+                        <td>Docker</td>
+                        <td><input id="docker" type="checkbox" myAnswer="I have worked on Docker implementing microservices example MMT contract for building Ireland train ticketing systems">
             </tr>
             <tr>
                 <td>AWS</td>
@@ -95,12 +112,33 @@
             </tr>
             <tr>
                 <td>Azure</td>
-                <td><input type="checkbox" myAnswer="XXXXX">
+                <td><input type="checkbox" myAnswer="I have worked as a Cloud Solution architect in Microsoft. Implementing Azure solutions for the top enterprises. I also have necessary certificates to implement solutions in Azure">
             </tr>
             <tr>
                 <td>Cloud Front</td>
-                <td><input type="checkbox" myAnswer="XXXXX">
+                <td><input type="checkbox" myAnswer="I have implemented multiple CDN systems and created workflows around validations and https/certificate management">
+                    <td>Unity</td>
+                    <td><input type="checkbox" myAnswer="I have build games with Unity in 2D and 3D. I have also worked in projects to realize DevOps pipelines with UCB">
+                        <td>UI Path</td>
+                        <td><input type="checkbox" myAnswer="I have build automated application systems in Linkedin. Created a network of 20k recruiters to land contracts using csharp and the automation framework.">
+                            <td>Social Media</td>
+                            <td><input type="checkbox" myAnswer="I have automation systems to publish marketing materials to Linkedin with tools such as Buffer and Slack">
+                                <td>SEM ( Search Engine Marketing )</td>
+                                <td><input type="checkbox" myAnswer="I have managed +100k in Google Adwords and generated 5m revenue of online business">
+                                    <td>SEO ( Search Engine Optimization )</td>
+                                    <td><input type="checkbox" myAnswer="I have managed multiple websites and generated millions of views and analysed using Google Analytics">
+                                        <td>Code Quality</td>
+                                        <td><input type="checkbox" myAnswer="I have worked as manager in Accenture responsible of managing SonarQube with a team of 100 developers ensuring the code quality and technical debt management">
+                                            <td>Object Oriented Design</td>
+                                            <td><input type="checkbox" myAnswer="I have been awarded as MVP from an object oriented database. I have implemented SOLID principles in multiple projects.">
+
+                                                <td>UML</td>
+                                                <td><input type="checkbox" myAnswer="I have done 2 research projects. Focusing on abstract designs using Unified modelling languages.">
+                                                    <td>Cloud</td>
+                                                    <td><input type="checkbox" myAnswer="I have build platforms using PAAS, IAAS and SAAS on multiple different vendors.">
+
             </tr>
+
             <tr>
                 <td>End Text</td>
                 <td><textarea name="txtEnd" id="txtEnd" cols="50" rows="10">I believe I would be a great candidate as I apply myself to all occasions, can work with people of different backgrounds and levels of authority. I have the necessary experience to work on this project and create value.Please feel free to give me a call if you have any questions you would like to discuss </textarea>
@@ -109,10 +147,14 @@
 
             <tr>
                 <td>PS (Extra)</td>
-                <td><textarea name="txtPS" cols="50" rows="10"> </textarea></td>
+                <td><textarea name="txtPS" cols="50" rows="10">I am open for offers. I am focused on contracting opportunities.</textarea></td>
             </tr>
             <tr>
-                <td colspan="2"><input id="mySubmit" value="Create Cover Letter" /><br />
+                <td>Visa</td>
+                <td><textarea name="txtVisa" cols="50" rows="10">I hold an ECAA visa to do business in United Kingdom.I have been contracting in the UK from 2017 </textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="button" id="mySubmit" value="Create Cover Letter" /><br />
                 </td>
             </tr>
             <tr>
