@@ -28,14 +28,18 @@
             $("#mySubmit").click(function() {
                 var top = $.trim($("#txtStart").val());
                 result = result.concat(top);
-                result = result.concat("                               ");
+                result = result.concat("</br></br>");
+                result = result.concat("<ul>");
                 $('#mytable').find(':checkbox:checked').each(function() {
                     var chk = $(this).attr("myAnswer");
+                    result = result.concat("<li>");
                     result = result.concat(chk);
+                    result = result.concat("</li>");
                 });
-                result = result.concat("                               ");
+                result = result.concat("</ul>");
+                result = result.concat("</br></br>");
                 var end = $.trim($("#txtEnd").val());
-                result = result.concat("                               ");
+                result = result.concat("</br></br>");
                 result = result.concat(end);
                 $("#txtoutput").html(result);
                 $("#mytableHolder").hide();
