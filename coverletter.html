@@ -20,6 +20,11 @@
     <script>
         $(document).ready(function() {
             var result = "";
+            $("#myRewrite").hide();
+
+            $("#myRewrite").click(function() {
+                location.reload();
+            });
             $("#mySubmit").click(function() {
                 var top = $.trim($("#txtStart").val());
                 result = result.concat(top);
@@ -32,7 +37,9 @@
                 var end = $.trim($("#txtEnd").val());
                 result = result.concat("                               ");
                 result = result.concat(end);
-                $("#txtoutput").val(result);
+                $("#txtoutput").html(result);
+                $("#mytableHolder").hide();
+                $("#myRewrite").show();
             });
         });
     </script>
@@ -42,7 +49,8 @@
     <header id="header"><strong>COVER LETTER GENERATOR</strong> </header>
     <hr>
     <br>
-    <form name="example" action="#" onsubmit="checkit(); return false">
+    <div id="mytableHolder">
+
         <table id="mytable" class="form">
             <tr>
                 <td>Candidate</td>
@@ -107,8 +115,9 @@
             <tr>
                 <td>AWS</td>
                 <td><input id="aws" type="checkbox" myAnswer="I have been working in AWS from its early days. I have build autoscaling groups for EC2 even when they did not exist in Amazon web services.">
-                    <td>AWS</td>
-                    <td><input type="checkbox" myAnswer="XXXXX">
+                    <td>Design patterns</td>
+                    <td><input type="checkbox" myAnswer="I have completed +2 research projects relating to design patterns. I did work on the project of Joe Yoder implementing multiple design patterns.
+                        ">
             </tr>
             <tr>
                 <td>Azure</td>
@@ -157,10 +166,11 @@
                 <td colspan="2"><input class="button" id="mySubmit" value="Create Cover Letter" /><br />
                 </td>
             </tr>
-            <tr>
-                <td colspan="2"><textarea cols="100" rows="50" name="txtoutput" id="txtoutput">Cover letter will be written here</textarea></td>
-            </tr>
         </table>
+    </div>
+    <hr>
+    <p id="txtoutput"></p>
+    <input class="button" id="myRewrite" value="New" />
 </body>
 
 </html>
