@@ -88,23 +88,24 @@
     <script>
         $(document).ready(function() {
             var result = "";
-            $("#myRewrite").hide();
 
+            $("#myRewrite").hide();
             $("#myRewrite").click(function() {
                 location.reload();
             });
+
             $("#mySubmit").click(function() {
 
                 var txtWho = $("#txtWho").val();
-                result = result.concat("Dear ");
+                result = result.concat("Dear");
                 result = result.concat(txtWho);
                 result = result.concat(",</br></br>");
 
                 var txtCompany = $("#txtCompany").val();
                 var txtRole = $("#txtRole").val();
-                result = result.concat("I am applying for ");
+                result = result.concat("I am applying for");
                 result = result.concat(txtRole);
-                result = result.concat(" in ");
+                result = result.concat(" in");
                 result = result.concat(txtCompany);
                 result = result.concat(".");
 
@@ -131,9 +132,9 @@
                     var chk = $(this).attr("myReference");
                     var ref = $(this).attr("myRefID");
                     result = result.concat("<li>");
-                    result = result.concat("* ");
+                    result = result.concat("*");
                     result = result.concat(ref);
-                    result = result.concat(" ");
+                    result = result.concat("");
                     result = result.concat(chk);
                     result = result.concat("</li>");
                 });
@@ -176,43 +177,44 @@
             <tr>
                 <td><strong>Matching Skills</strong></td>
             </tr>
-            <tr display="none">
-                <td><label class="container">
-                        <input type="checkbox" myAnswer="">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">
-                        <input type="checkbox" myAnswer="">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">
-                        <input type="checkbox" myAnswer="">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">
-                        <input type="checkbox" myAnswer="">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">
-                        <input type="checkbox" myAnswer="">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">
-                        <input type="checkbox" myAnswer="">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">
-                        <input type="checkbox" myAnswer="">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-            </tr>
+            <!-- <tr>
+                    <td><label class="container">
+                            <input type="checkbox" myAnswer="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td><label class="container">
+                            <input type="checkbox" myAnswer="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td><label class="container">
+                            <input type="checkbox" myAnswer="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td><label class="container">
+                            <input type="checkbox" myAnswer="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td><label class="container">
+                            <input type="checkbox" myAnswer="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td><label class="container">
+                            <input type="checkbox" myAnswer="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td><label class="container">
+                            <input type="checkbox" myAnswer="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                </tr> -->
+
             <tr>
                 <td><label class="container">CI/CD
                         <input myRefID="12" type="checkbox"
@@ -266,7 +268,7 @@
             <tr>
                 <td><label class="container">Cloud Front
                         <input type="checkbox"
-                            myAnswer="I have implemented multiple CDN systems and created workflows around validations and https/certificate management ">
+                            myAnswer="I have implemented multiple CDN systems and created workflows around validations and https/certificate management">
                         <span class="checkmark"></span>
                     </label>
                 </td>
@@ -361,17 +363,17 @@
                     </label>
                 </td>
                 <td><label class="container">Cloud
-                        <input type="checkbox" myAnswer="I have build platforms using PAAS, IAAS and SAAS on multiple different vendors. ">
+                        <input type="checkbox" myAnswer="I have build platforms using PAAS, IAAS and SAAS on multiple different vendors.">
                         <span class="checkmark"></span>
                     </label>
                 </td>
                 <td><label class="container">UML
-                        <input type="checkbox" myAnswer="I have done 2 research projects. Focusing on abstract designs using Unified modelling languages. ">
+                        <input type="checkbox" myAnswer="I have done 2 research projects. Focusing on abstract designs using Unified modelling languages.">
                         <span class="checkmark"></span>
                     </label>
                 </td>
                 <td><label class="container">Object Oriented Design
-                        <input type="checkbox" myAnswer="I have been awarded as MVP from an object oriented database. I have implemented SOLID principles in multiple projects. ">
+                        <input type="checkbox" myAnswer="I have been awarded as MVP from an object oriented database. I have implemented SOLID principles in multiple projects.">
                         <span class="checkmark"></span>
                     </label>
                 </td>
@@ -383,7 +385,7 @@
             </tr>
             <tr>
                 <td><label class="container">Code Quality
-                        <input type="checkbox" myAnswer="I have worked as manager in Accenture responsible of managing SonarQube with a team of 100 developers ensuring the code quality and technical debt management ">
+                        <input type="checkbox" myAnswer="I have worked as manager in Accenture responsible of managing SonarQube with a team of 100 developers ensuring the code quality and technical debt management">
                         <span class="checkmark"></span>
                     </label>
                 </td>
@@ -393,12 +395,12 @@
                     </label>
                 </td>
                 <td><label class="container">SEO ( Search Engine Optimization )
-                        <input type="checkbox" myAnswer="I have managed multiple websites and generated millions of views and analysed using Google Analytics ">
+                        <input type="checkbox" myAnswer="I have managed multiple websites and generated millions of views and analysed using Google Analytics">
                         <span class="checkmark"></span>
                     </label>
                 </td>
                 <td><label class="container">SEM ( Search Engine Marketing )
-                        <input type="checkbox" myAnswer="I have managed +100k in Google Adwords and generated 5m revenue of online business ">
+                        <input type="checkbox" myAnswer="I have managed +100k in Google Adwords and generated 5m revenue of online business">
                         <span class="checkmark"></span>
                     </label>
                 </td>
@@ -408,12 +410,12 @@
                     </label>
                 </td>
                 <td><label class="container">UI Path
-                        <input type="checkbox" myAnswer="I have build automated application systems in Linkedin. Created a network of 20k recruiters to land contracts using csharp and the automation framework. ">
+                        <input type="checkbox" myAnswer="I have build automated application systems in Linkedin. Created a network of 20k recruiters to land contracts using csharp and the automation framework.">
                         <span class="checkmark"></span>
                     </label>
                 </td>
                 <td><label class="container">Unity
-                        <input type="checkbox" myAnswer="I have build games with Unity in 2D and 3D. I have also worked in projects to realize DevOps pipelines with UCB ">
+                        <input type="checkbox" myAnswer="I have build games with Unity in 2D and 3D. I have also worked in projects to realize DevOps pipelines with UCB">
                         <span class="checkmark"></span>
                     </label>
                 </td>
@@ -422,29 +424,29 @@
 
             <tr>
                 <td>End Text</td>
-                <td><textarea name="txtEnd " id="txtEnd " cols="50 " rows="10 ">I believe I would be a great candidate as I apply myself to all occasions, can work with people of different backgrounds and levels of authority. I have the necessary experience to work on this project and create value.Please feel free to give me a call if you have any questions you would like to discuss </textarea>
+                <td><textarea name="txtEnd" id="txtEnd" cols="50" rows="10">I believe I would be a great candidate as I apply myself to all occasions, can work with people of different backgrounds and levels of authority. I have the necessary experience to work on this project and create value.Please feel free to give me a call if you have any questions you would like to discuss </textarea>
                 </td>
             </tr>
 
             <tr>
                 <td>PS (Extra)</td>
-                <td><textarea name="txtPS " cols="50 " rows="10 ">I am open for offers. I am focused on contracting opportunities.I welcome this oppurtunity and looking forward to hear from you.</textarea>
+                <td><textarea name="txtPS" cols="50" rows="10">I am open for offers. I am focused on contracting opportunities.I welcome this oppurtunity and looking forward to hear from you.</textarea>
                 </td>
             </tr>
             <tr>
                 <td>Visa</td>
-                <td><textarea name="txtVisa " cols="50 " rows="10 ">I hold an ECAA visa to do business in United Kingdom.I have been contracting in the UK from 2017 </textarea>
+                <td><textarea name="txtVisa" cols="50" rows="10">I hold an ECAA visa to do business in United Kingdom.I have been contracting in the UK from 2017 </textarea>
                 </td>
             </tr>
             <tr>
-                <td colspan="2 "><input class="button " id="mySubmit " value="Create Cover Letter " /><br />
+                <td colspan="2"><input class="button" id="mySubmit" value="Create Cover Letter" /><br />
                 </td>
             </tr>
         </table>
     </div>
     <hr>
-    <p id="txtoutput "></p>
-    <input class="button " id="myRewrite " value="New " />
+    <p id="txtoutput"></p>
+    <input class="button" id="myRewrite" value="New" />
 </body>
 
 </html>
