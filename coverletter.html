@@ -128,17 +128,27 @@
                 result = result.concat("</br></br>");
                 result = result.concat(end);
                 result = result.concat("</br><strong>References</strong></br>");
+
+                result = result.concat("<ul>");
                 $('#mytable').find(':checkbox:checked').each(function() {
+
                     var chk = $(this).attr("myReference");
-                    var ref = $(this).attr("myRefID");
-                    result = result.concat("<li>");
-                    result = result.concat("*");
-                    result = result.concat(ref);
-                    result = result.concat("");
-                    result = result.concat(chk);
-                    result = result.concat("</li>");
+                    if (chk != undefined) {
+                        var ref = $(this).attr("myRefID");
+                        result = result.concat("<li>");
+                        result = result.concat("*");
+                        result = result.concat(ref);
+                        result = result.concat("");
+                        result = result.concat(chk);
+                        result = result.concat("</li>");
+                    }
                 });
 
+                result = result.concat("<li>");
+                result = result.concat("*");
+                result = result.concat("https://www.linkedin.com/in/rifaterdemsahin/");
+                result = result.concat("</li>");
+                result = result.concat("</ul>");
                 $("#txtoutput").html(result);
                 $("#mytableHolder").hide();
                 $("#myRewrite").show();
