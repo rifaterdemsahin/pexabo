@@ -4,6 +4,16 @@
 <head>
     <title>Cover Letter Generator</title>
     <style>
+        td,
+        input,
+        label,
+        textarea,
+        p {
+            color: black;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
         .button {
             background-color: #4CAF50;
             /* Green */
@@ -97,15 +107,15 @@
             $("#mySubmit").click(function() {
 
                 var txtWho = $("#txtWho").val();
-                result = result.concat("Dear");
+                result = result.concat("Dear ");
                 result = result.concat(txtWho);
                 result = result.concat(",</br></br>");
 
                 var txtCompany = $("#txtCompany").val();
                 var txtRole = $("#txtRole").val();
-                result = result.concat("I am applying for");
+                result = result.concat("I am applying for ");
                 result = result.concat(txtRole);
-                result = result.concat(" in");
+                result = result.concat(" in ");
                 result = result.concat(txtCompany);
                 result = result.concat(".");
 
@@ -228,8 +238,8 @@
             <tr>
                 <td><label class="container">CI/CD
                         <input myRefID="12" type="checkbox"
-                            myReference="https://www.linkedin.com/pulse/concentra-contract-reference-erdem-sahin-/?published=t"
-                            myAnswer="I have built more than 10 CI/CD pipelines which include Jenkin, TeamCity, Octopus Deploy and Azure DevOps implementing of DevOps principles. I have also worked in Unity Cloud Build* and created extensive architectures for DevOps on virtual reality environments.">
+                            myReference="https://s3.amazonaws.com/www.devops.engineering/portfolio-details.html#cicd"
+                            myAnswer="I have built more than 10 CI/CD pipelines which include Jenkin, TeamCity, Octopus Deploy and Azure DevOps implementing of DevOps principles. I have  worked in Unity Cloud Build* and created extensive architectures for DevOps on virtual reality environments.">
                         <span class="checkmark"></span>
                     </label>
                 </td>
@@ -238,21 +248,21 @@
                         <input type="checkbox"
                             myReference="https://www.linkedin.com/pulse/concentra-contract-reference-erdem-sahin-/?published=t"
                             myRefID="13"
-                            myAnswer="I have also worked on Angular on multiple projects, for example, my Scottish Enterprise contract was based on a pipeline which I have deployed .Net microservices build on Azure Web Apps and API Gateway in Azure*.">
+                            myAnswer="I have  worked on Angular on multiple projects, for example, my Scottish Enterprise contract was based on a pipeline which I have deployed .Net microservices build on Azure Web Apps and API Gateway in Azure*.">
                         <span class="checkmark"></span>
                     </label>
                 </td>
 
                 <td><label class="container">Git
                         <input type="checkbox"
-                            myAnswer="I have also worked in multiple open source projects including Git and Github, Github Actions which I have mentioned in the references using the AWS Cloud front CDN systems.">
+                            myAnswer="I have  worked in multiple open source projects including Git and Github, Github Actions which I have mentioned in the references using the AWS Cloud front CDN systems.">
                         <span class="checkmark"></span>
                     </label>
                 </td>
 
                 <td><label class="container">CDN
                         <input type="checkbox"
-                            myAnswer="I have also worked in multiple CDN systems including Akamai and AWS Cloud front. These are active systems that is getting used all over the world.">
+                            myAnswer="I have  worked in multiple CDN systems including Akamai and AWS Cloud front. These are active systems that is getting used all over the world.">
                         <span class="checkmark"></span>
                     </label>
                 </td>
@@ -284,7 +294,7 @@
                 </td>
                 <td><label class="container">Azure
                         <input type="checkbox"
-                            myAnswer="I have worked as a Cloud Solution architect in Microsoft. Implementing Azure solutions for the top enterprises. I also have necessary certificates to implement solutions in Azure">
+                            myAnswer="I have worked as a Cloud Solution architect in Microsoft. Implementing Azure solutions for the top enterprises. I have necessary certificates to implement solutions in Azure">
                         <span class="checkmark"></span>
                     </label>
                 </td>
@@ -425,7 +435,7 @@
                     </label>
                 </td>
                 <td><label class="container">Unity
-                        <input type="checkbox" myAnswer="I have build games with Unity in 2D and 3D. I have also worked in projects to realize DevOps pipelines with UCB">
+                        <input type="checkbox" myAnswer="I have build games with Unity in 2D and 3D. I have worked in projects to realize DevOps pipelines with UCB">
                         <span class="checkmark"></span>
                     </label>
                 </td>
