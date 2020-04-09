@@ -112,13 +112,14 @@
                 var end = $.trim($("#txtEnd").val());
                 result = result.concat("</br></br>");
                 result = result.concat(end);
-                result = result.concat("</br>References</br>");
+                result = result.concat("</br><strong>References</strong></br>");
                 $('#mytable').find(':checkbox:checked').each(function() {
                     var chk = $(this).attr("myReference");
                     var ref = $(this).attr("myRefID");
                     result = result.concat("<li>");
                     result = result.concat("* ");
                     result = result.concat(ref);
+                    result = result.concat(" ");
                     result = result.concat(chk);
                     result = result.concat("</li>");
                 });
