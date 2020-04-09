@@ -94,6 +94,20 @@
                 location.reload();
             });
             $("#mySubmit").click(function() {
+
+                var txtWho = $("#txtWho").val();
+                result = result.concat("Dear ");
+                result = result.concat(txtWho);
+                result = result.concat(",</br></br>");
+
+                var txtCompany = $("#txtCompany").val();
+                var txtRole = $("#txtRole").val();
+                result = result.concat("I am applying for ");
+                result = result.concat(txtRole);
+                result = result.concat(" in ");
+                result = result.concat(txtCompany);
+                result = result.concat(".");
+
                 var top = $.trim($("#txtStart").val());
                 result = result.concat(top);
                 result = result.concat("</br></br>");
@@ -140,8 +154,8 @@
 
         <table id="mytable" class="form">
             <tr>
-                <td>Candidate (STATIC)</td>
-                <td><input name="txtCandidate" value="Erdem" /></td>
+                <td>To Who ?</td>
+                <td><input id="txtWho" /></td>
             </tr>
             <tr>
                 <td>Start Text</td>
@@ -151,23 +165,12 @@
 
             <tr>
                 <td>Which company to apply ?</td>
-                <td><input name="punishedname" /></td>
+                <td><input id="txtCompany" /></td>
             </tr>
-
-            <!-- <tr>
-                <td>Type ?</td>
-                <td><select name="myType">
-                        <option value='' selected="selected">--- Select ---</option>
-                        <option value="long">long</option>
-                        <option value="medium">medium</option>
-                        <option value="short">short</option>
-                    </select>
-                </td>
-            </tr> -->
 
             <tr>
                 <td>Role ?</td>
-                <td><input name="role" />
+                <td><input id="txtRole" />
             </tr>
 
             <tr>
