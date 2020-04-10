@@ -143,19 +143,28 @@
 
 
             var myTable = "";
-            myTable = myTable.concat("<table id=\"mytable\" class=\"form\"><tr>");
+            myTable = myTable.concat("<table id=\"mytable\" class=\"form\">");
 
+            var i = 1;
             for (var key in dict) {
+                if (i % 7 == 0) {
+                    myTable = myTable.concat("<tr>");
+                }
+
                 var value = dict[key];
                 myTable = myTable.concat("<td>");
                 myTable = myTable.concat("<label class=\"container\">" + key);
                 myTable = myTable.concat("<input type=\"checkbox\" myAnswer=\"" + value + "\">");
                 myTable = myTable.concat("<span class=\"checkmark\"></span>");
                 myTable = myTable.concat("</label></td>");
+                if (i % 7 == 6) {
+                    myTable = myTable.concat("</tr>");
+                }
+                i = i + 1;
             }
 
 
-            myTable = myTable.concat("</tr></table>");
+            myTable = myTable.concat("</table>");
             $("body").append(myTable);
 
             var result = "";
