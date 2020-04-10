@@ -98,20 +98,29 @@
     <script>
         $(document).ready(function() {
 
+            var dict = new Object();
+            dict["CI/CD"] = "I have built more than 10 CI/CD pipelines which include Jenkin, TeamCity, Octopus Deploy and Azure DevOps implementing of DevOps principles. I have  worked in Unity Cloud Build* and created extensive architectures for DevOps on virtual reality environments.";
+            dict["Angular"] = "I have  worked on Angular on multiple projects, for example, my Scottish Enterprise contract was based on a pipeline which I have deployed .Net microservices build on Azure Web Apps and API Gateway in Azure*.";
+            dict["Git"] = "I have  worked in multiple open source projects including Git and Github, Github Actions which I have mentioned in the references using the AWS Cloud front CDN systems.";
+            dict["CDN"] = "I have  worked in multiple CDN systems including Akamai and AWS Cloud front. These are active systems that is getting used all over the world.";
+            dict[""] = "";
+
+
 
             var myTable = "";
-
-            var i;
-
             myTable = myTable.concat("<table id=\"mytable\" class=\"form\"><tr>");
 
-            for (i = 0; i < 10; i++) {
+            for (var key in dict) {
+                var value = dict[key];
                 myTable = myTable.concat("<td>");
-                myTable = myTable.concat("<label class=\"container\">Solid");
-                myTable = myTable.concat("<input type=\"checkbox\" myAnswer=\"Strong believer in Object oriented design. Implemented in +4 projects.\">");
+                myTable = myTable.concat("<label class=\"container\">" + key);
+                myTable = myTable.concat("<input type=\"checkbox\" myAnswer=\"" + value + "\">");
                 myTable = myTable.concat("<span class=\"checkmark\"></span>");
                 myTable = myTable.concat("</label></td>");
+
+
             }
+
 
             myTable = myTable.concat("</tr></table>");
             $("body").append(myTable);
@@ -143,11 +152,8 @@
                 result = result.concat("<ul>");
                 $('#mytable').find(':checkbox:checked').each(function() {
                     var chk = $(this).attr("myAnswer");
-                    // var ref = $(this).attr("myRefID");
                     result = result.concat("<li>");
                     result = result.concat(chk);
-                    // result = result.concat("*");
-                    // result = result.concat(ref);
                     result = result.concat("</li>");
                 });
                 result = result.concat("</ul>");
@@ -156,25 +162,9 @@
                 result = result.concat("</br></br>");
                 result = result.concat(end);
 
-
-
                 result = result.concat("</br><strong>References</strong></br>");
 
                 result = result.concat("<ul>");
-                // $('#mytable').find(':checkbox:checked').each(function() {
-
-                //     var chk = $(this).attr("myReference");
-                //     if (chk != undefined) {
-                //         var ref = $(this).attr("myRefID");
-                //         result = result.concat("<li>");
-                //         result = result.concat("*");
-                //         result = result.concat(ref);
-                //         result = result.concat("");
-                //         result = result.concat(chk);
-                //         result = result.concat("</li>");
-                //     }
-                // });
-
                 result = result.concat("<li>");
                 result = result.concat("*");
                 result = result.concat("https://www.linkedin.com/in/rifaterdemsahin/");
@@ -268,7 +258,6 @@
             <tr>
                 <td><label class="container">CI/CD
                         <input myRefID="12" type="checkbox"
-                            myReference="https://s3.amazonaws.com/www.devops.engineering/portfolio-details.html#cicd"
                             myAnswer="I have built more than 10 CI/CD pipelines which include Jenkin, TeamCity, Octopus Deploy and Azure DevOps implementing of DevOps principles. I have  worked in Unity Cloud Build* and created extensive architectures for DevOps on virtual reality environments.">
                         <span class="checkmark"></span>
                     </label>
