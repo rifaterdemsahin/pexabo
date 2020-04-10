@@ -134,13 +134,31 @@
             dict["Social Media"] = "I have automation systems to publish marketing materials to Linkedin with tools such as Buffer and Slack";
             dict["UI Path"] = "I have build automated application systems in Linkedin. Created a network of 20k recruiters to land contracts using csharp and the automation framework.";
             dict["Unity"] = "I have build games with Unity in 2D and 3D. I have worked in projects to realize DevOps pipelines with UCB";
-            dict[""] = "";
-            dict[""] = "";
-            dict[""] = "";
-            dict[""] = "";
-            dict[""] = "";
 
 
+            var sorted = [];
+            for (var key in dict) {
+                sorted[sorted.length] = key;
+            }
+            sorted.sort();
+
+            function sortOnKeys(dict) {
+
+                var sorted = [];
+                for (var key in dict) {
+                    sorted[sorted.length] = key;
+                }
+                sorted.sort();
+
+                var tempDict = {};
+                for (var i = 0; i < sorted.length; i++) {
+                    tempDict[sorted[i]] = dict[sorted[i]];
+                }
+
+                return tempDict;
+            }
+
+            dict = sortOnKeys(dict);
 
             var myTable = "";
             myTable = myTable.concat("<table id=\"mytable\" class=\"form\">");
