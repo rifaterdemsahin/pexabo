@@ -97,8 +97,26 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
         $(document).ready(function() {
-            var result = "";
 
+
+            var myTable = "";
+
+            var i;
+
+            myTable = myTable.concat("<table id=\"mytable\" class=\"form\"><tr>");
+
+            for (i = 0; i < 10; i++) {
+                myTable = myTable.concat("<td>");
+                myTable = myTable.concat("<label class=\"container\">Solid");
+                myTable = myTable.concat("<input type=\"checkbox\" myAnswer=\"Strong believer in Object oriented design. Implemented in +4 projects.\">");
+                myTable = myTable.concat("<span class=\"checkmark\"></span>");
+                myTable = myTable.concat("</label></td>");
+            }
+
+            myTable = myTable.concat("</tr></table>");
+            $("body").append(myTable);
+
+            var result = "";
             $("#myRewrite").hide();
             $("#myRewrite").click(function() {
                 location.reload();
@@ -137,19 +155,7 @@
                 var end = $.trim($("#txtEnd").val());
                 result = result.concat("</br></br>");
                 result = result.concat(end);
-                var i;
 
-                result = result.concat("<table id=\"mytable\" class=\"form\"><tr>");
-
-                for (i = 0; i < 10; i++) {
-                    result = result.concat("<td>");
-                    result = result.concat("<label class=\"container\">Solid");
-                    result = result.concat("<input type=\"checkbox\" myAnswer=\"Strong believer in Object oriented design. Implemented in +4 projects.\">");
-                    result = result.concat("<span class=\checkmark\"></span>");
-                    result = result.concat("</label></td>");
-                }
-
-                result = result.concat("</tr></table>");
 
 
                 result = result.concat("</br><strong>References</strong></br>");
