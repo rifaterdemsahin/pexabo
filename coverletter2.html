@@ -209,6 +209,7 @@
             dict["javascript"] = "Build more than +6 web projects including trading engines and sports side with many interactions"
             dict["java"] = "Gave java courses more than a year for college undergraduates. Did code quality control for the top banks in Europe."
             dict["c#"] = "Build more than end to end +10 projects."
+
             var sorted = [];
             for (var key in dict) {
                 sorted[sorted.length] = key;
@@ -234,7 +235,7 @@
             dict = sortOnKeys(dict);
 
             var myTable = "";
-            myTable = myTable.concat("<table id=\"mytable\" class=\"form\">");
+            myTable = myTable.concat("<table id=\"mytableSkills\" class=\"form\">");
 
             var i = 1;
             for (var key in dict) {
@@ -256,7 +257,7 @@
 
 
             myTable = myTable.concat("</table>");
-            $("body").append(myTable);
+            $("#txtSkills").html(myTable);
 
             var result = "";
             $("#myRewrite").hide();
@@ -313,7 +314,10 @@
                 result = result.concat(txtVisa);
 
                 $("#txtoutput").html(result);
+                $("#mytableSkills").hide();
                 $("#mytableHolder").hide();
+                $("#txtMatchHeader").hide();
+
                 $("#myRewrite").show();
             });
         });
@@ -346,254 +350,6 @@
                 <td>Role ?</td>
                 <td><input id="txtRole" />
             </tr>
-
-            <tr>
-                <td><strong>Matching Skills</strong></td>
-            </tr>
-            <!-- <tr>
-                    <td><label class="container">
-                            <input type="checkbox" myAnswer="">
-                            <span class="checkmark"></span>
-                        </label>
-                    </td>
-                    <td><label class="container">
-                            <input type="checkbox" myAnswer="">
-                            <span class="checkmark"></span>
-                        </label>
-                    </td>
-                    <td><label class="container">
-                            <input type="checkbox" myAnswer="">
-                            <span class="checkmark"></span>
-                        </label>
-                    </td>
-                    <td><label class="container">
-                            <input type="checkbox" myAnswer="">
-                            <span class="checkmark"></span>
-                        </label>
-                    </td>
-                    <td><label class="container">
-                            <input type="checkbox" myAnswer="">
-                            <span class="checkmark"></span>
-                        </label>
-                    </td>
-                    <td><label class="container">
-                            <input type="checkbox" myAnswer="">
-                            <span class="checkmark"></span>
-                        </label>
-                    </td>
-                    <td><label class="container">
-                            <input type="checkbox" myAnswer="">
-                            <span class="checkmark"></span>
-                        </label>
-                    </td>
-                </tr> -->
-
-            <tr>
-                <td><label class="container">CI/CD
-                        <input myRefID="12" type="checkbox"
-                            myAnswer="I have built more than 10 CI/CD pipelines which include Jenkin, TeamCity, Octopus Deploy and Azure DevOps implementing of DevOps principles. I have  worked in Unity Cloud Build* and created extensive architectures for DevOps on virtual reality environments.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-
-                <td><label class="container">Angular
-                        <input type="checkbox"
-                            myReference="https://www.linkedin.com/pulse/concentra-contract-reference-erdem-sahin-/?published=t"
-                            myRefID="13"
-                            myAnswer="I have  worked on Angular on multiple projects, for example, my Scottish Enterprise contract was based on a pipeline which I have deployed .Net microservices build on Azure Web Apps and API Gateway in Azure*.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-
-                <td><label class="container">Git
-                        <input type="checkbox"
-                            myAnswer="I have  worked in multiple open source projects including Git and Github, Github Actions which I have mentioned in the references using the AWS Cloud front CDN systems.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-
-                <td><label class="container">CDN
-                        <input type="checkbox"
-                            myAnswer="I have  worked in multiple CDN systems including Akamai and AWS Cloud front. These are active systems that is getting used all over the world.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">IaC
-                        <input type="checkbox"
-                            myAnswer="I have worked with IaC tools such as Chef, Bash and Terraform in my Concentra contract.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Powershell
-                        <input type="checkbox"
-                            myAnswer="I have used PowerShell, Octopus Deploy in my Smartspace contract to build one of the biggest implemented meeting automation systems in the world.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Continuous Delivery
-                        <input type="checkbox"
-                            myAnswer="I am an advocate of continuous delivery and deployment so I would be a great candidate to create the environments.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td><label class="container">Cloud Front
-                        <input type="checkbox"
-                            myAnswer="I have implemented multiple CDN systems and created workflows around validations and https/certificate management">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Azure
-                        <input type="checkbox"
-                            myAnswer="I have worked as a Cloud Solution architect in Microsoft. Implementing Azure solutions for the top enterprises. I have necessary certificates to implement solutions in Azure">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Design patterns
-                        <input type="checkbox"
-                            myAnswer="I have completed +2 research projects relating to design patterns. I did work on the project of Joe Yoder implementing multiple design patterns.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">AWS
-                        <input type="checkbox"
-                            myAnswer="I have been working in AWS from its early days. I have build autoscaling groups for EC2 even when they did not exist in Amazon web services.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Pipelines
-                        <input type="checkbox"
-                            myAnswer="I have build pipelines suing different tools such as Jenkins,TeamCity,UCB,Octopus,Azure DevOps,Github Actions">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Docker
-                        <input type="checkbox"
-                            myAnswer="I have worked on Docker implementing microservices example MMT contract for building Ireland train ticketing systems">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Linux
-                        <input type="checkbox"
-                            myAnswer="I have worked on multiple Linux projects including RedBox, MMT and Concentra contracts">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td><label class="container">Scrum / Kanban
-                        <input type="checkbox" myAnswer="Did +2 projects. Worked as Scrum master. Converted to Kanban after Scrum's shortcomings. Love the active teams and communication for the work in progress limits. The idea and the implementation is great">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Infrastructure As Code
-                        <input type="checkbox" myAnswer="Process of managing and provisioning in the cloud using declarative and imperative styles.Tools such as Ansible and Azure Resource Manager">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Documentation
-                        <input type="checkbox" myAnswer="Doing the documentation in the projects using Rational Unified Process. Care about lean and useful documentation.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Rational Unified Process
-                        <input type="checkbox" myAnswer="Doing the documentation in the projects. Care about lean and useful documentation.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Databases
-                        <input type="checkbox" myAnswer="Worked with many database systems. Implemented many systems including SQL and NoSql systems.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Cap
-                        <input type="checkbox" myAnswer="Worked with many database systems. Implemented many systems including SQL and NoSql systems.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Solid
-                        <input type="checkbox" myAnswer="Strong believer in Object oriented design. Implemented in +4 projects.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td><label class="container">DevOps
-                        <input type="checkbox" myAnswer="Continuous delivery is the passion. Implemented Teamcity and Appveyor in +3 projects">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Test Driven Development
-                        <input type="checkbox" myAnswer="Believe the power of test driven development.Binding the tests CI systems is one of responsibilities.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Microservices
-                        <input type="checkbox" myAnswer="Build +20 microservices for +4 projects. Believe in the divide and conquer concept. Familiar with Patterns of Enterprise Application Architecture">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Cloud
-                        <input type="checkbox" myAnswer="I have build platforms using PAAS, IAAS and SAAS on multiple different vendors.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">UML
-                        <input type="checkbox" myAnswer="I have done 2 research projects. Focusing on abstract designs using Unified modelling languages.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Object Oriented Design
-                        <input type="checkbox" myAnswer="I have been awarded as MVP from an object oriented database. I have implemented SOLID principles in multiple projects.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Open Source
-                        <input type="checkbox" myAnswer="Multiple open source projects and active contributor in Github">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td><label class="container">Code Quality
-                        <input type="checkbox" myAnswer="I have worked as manager in Accenture responsible of managing SonarQube with a team of 100 developers ensuring the code quality and technical debt management">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Ad Server
-                        <input type="checkbox" myAnswer="Build and adserver system leveraging the AWS infrastructure to host billion views per day.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">SEO ( Search Engine Optimization )
-                        <input type="checkbox" myAnswer="I have managed multiple websites and generated millions of views and analysed using Google Analytics">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">SEM ( Search Engine Marketing )
-                        <input type="checkbox" myAnswer="I have managed +100k in Google Adwords and generated 5m revenue of online business">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Social Media
-                        <input type="checkbox" myAnswer="I have automation systems to publish marketing materials to Linkedin with tools such as Buffer and Slack">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">UI Path
-                        <input type="checkbox" myAnswer="I have build automated application systems in Linkedin. Created a network of 20k recruiters to land contracts using csharp and the automation framework.">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-                <td><label class="container">Unity
-                        <input type="checkbox" myAnswer="I have build games with Unity in 2D and 3D. I have worked in projects to realize DevOps pipelines with UCB">
-                        <span class="checkmark"></span>
-                    </label>
-                </td>
-            </tr>
-
-
             <tr>
                 <td>End Text</td>
                 <td><textarea name="txtEnd" id="txtEnd" cols="50" rows="10">I believe I would be a great candidate as I apply myself to all occasions, can work with people of different backgrounds and levels of authority. I have the necessary experience to work on this project and create value.Please feel free to give me a call if you have any questions you would like to discuss </textarea>
@@ -610,14 +366,15 @@
                 <td><textarea id="txtVisa" cols="50" rows="10">I hold an ECAA visa to do business in United Kingdom.I have been contracting in the UK from 2017 </textarea>
                 </td>
             </tr>
-            <tr>
-                <td colspan="2"><input class="button" id="mySubmit" value="Create Cover Letter" /><br />
-                </td>
-            </tr>
         </table>
     </div>
-    <hr>
+
     <p id="txtoutput"></p>
+    <hr>
+    <p id="txtMatchHeader"><strong>Matching Skills</strong></p>
+    <p id="txtSkills"></p>
+    <hr>
+    <input class="button" id="mySubmit" value="Create Cover Letter" />
     <input class="button" id="myRewrite" value="New" />
 </body>
 
