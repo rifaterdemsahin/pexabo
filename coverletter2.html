@@ -272,6 +272,24 @@
 
             });
 
+            $("#chkDevOps").click(function() {
+                if ($(this).is(":checked")) {
+                    $("#txtRole").val("DevOps");
+                }
+            });
+
+            $("#chkDevOpsEngineer").click(function() {
+                if ($(this).is(":checked")) {
+                    $("#txtRole").val("DevOps Engineer");
+                }
+            });
+
+            $("#chkDevOpsArchitect").click(function() {
+                if ($(this).is(":checked")) {
+                    $("#txtRole").val("DevOps Architect");
+                }
+            });
+
 
             $("#mySubmit").click(function() {
 
@@ -357,7 +375,7 @@
 
             <tr>
                 <td>Role ?</td>
-                <td><input id="txtRole" />
+                <td><input id="txtRole" /><input id="chkDevOps" type="checkbox">DevOps<input id="chkDevOpsEngineer" type="checkbox">DevOps Engineer<input id="chkDevOpsArchitect" type="checkbox">DevOps Architect</td>
             </tr>
             <tr>
                 <td>End Text</td>
