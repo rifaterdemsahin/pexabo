@@ -265,6 +265,14 @@
                 location.reload();
             });
 
+            $("#chkUpwork").click(function() {
+                if ($(this).is(":checked")) {
+                    $("#txtWho").val("Upwork Bidder");
+                }
+
+            });
+
+
             $("#mySubmit").click(function() {
 
                 var txtWho = $("#txtWho").val();
@@ -334,7 +342,7 @@
         <table id="mytable" class="form">
             <tr>
                 <td>To Who ?</td>
-                <td><input id="txtWho" /></td>
+                <td><input id="txtWho" /><input id="chkUpwork" type="checkbox">Upwork Bidder</td>
             </tr>
             <tr>
                 <td>Start Text</td>
