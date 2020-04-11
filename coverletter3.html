@@ -96,6 +96,21 @@
     </style>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
+        function CopyToClipboard(containerid) {
+            if (document.selection) {
+                var range = document.body.createTextRange();
+                range.moveToElementText(document.getElementById(containerid));
+                range.select().createTextRange();
+                document.execCommand("copy");
+            } else if (window.getSelection) {
+                var range = document.createRange();
+                range.selectNode(document.getElementById(containerid));
+                window.getSelection().addRange(range);
+                document.execCommand("copy");
+                alert("Text has been copied, now paste in the text-area")
+            }
+        }
+
         $(document).ready(function() {
 
             var dict = new Object();
@@ -363,54 +378,57 @@
     <header id="header"><strong>COVER LETTER GENERATOR</strong> </header>
     <hr>
     <br>
-    <div id="mytableHolder">
+    <div id="div1">
+        <div id="mytableHolder">
 
-        <table id="mytable" class="form">
-            <tr>
-                <td>To Who ?</td>
-                <td><input id="txtWho" /><input id="chkUpwork" type="checkbox">Upwork Bidder</td>
-            </tr>
-            <tr>
-                <td>Start Text</td>
-                <td><textarea id="txtStart" name="txtStart" cols="50" rows="10">I am an IT contractor who worked in diverse projects internationally. I have worked in Uk, Us and Turkey. I am looking for a new role that will allow me to help the company to reach its goals. I meet the requirements of your organisation as I will be working for based on the following skills which are directly and indirectly related to the task. I am passionate about building technology systems which further enabled me to be qualified in my field.<br/> Below I have listed my skills that matched to the project. </textarea>
-                </td>
-            </tr>
+            <table id="mytable" class="form">
+                <tr>
+                    <td>To Who ?</td>
+                    <td><input id="txtWho" /><input id="chkUpwork" type="checkbox">Upwork Bidder</td>
+                </tr>
+                <tr>
+                    <td>Start Text</td>
+                    <td><textarea id="txtStart" name="txtStart" cols="50" rows="10">I am an IT contractor who worked in diverse projects internationally. I have worked in Uk, Us and Turkey. I am looking for a new role that will allow me to help the company to reach its goals. I meet the requirements of your organisation as I will be working for based on the following skills which are directly and indirectly related to the task. I am passionate about building technology systems which further enabled me to be qualified in my field.<br/> Below I have listed my skills that matched to the project. </textarea>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>Which company to apply ?</td>
-                <td><input id="txtCompany" /><input id="chkCompany" type="checkbox">your company</td>
-            </tr>
+                <tr>
+                    <td>Which company to apply ?</td>
+                    <td><input id="txtCompany" /><input id="chkCompany" type="checkbox">your company</td>
+                </tr>
 
-            <tr>
-                <td>Role ?</td>
-                <td><input id="txtRole" /><input id="chkDevOps" type="checkbox">DevOps<input id="chkDevOpsEngineer" type="checkbox">DevOps Engineer<input id="chkDevOpsArchitect" type="checkbox">DevOps Architect</td>
-            </tr>
-            <tr>
-                <td>End Text</td>
-                <td><textarea name="txtEnd" id="txtEnd" cols="50" rows="10">I believe I would be a great candidate as I apply myself to all occasions, can work with people of different backgrounds and levels of authority. I have the necessary experience to work on this project and create value. Please feel free to give me a call if you have any questions you would like to discuss </textarea>
-                </td>
-            </tr>
+                <tr>
+                    <td>Role ?</td>
+                    <td><input id="txtRole" /><input id="chkDevOps" type="checkbox">DevOps<input id="chkDevOpsEngineer" type="checkbox">DevOps Engineer<input id="chkDevOpsArchitect" type="checkbox">DevOps Architect</td>
+                </tr>
+                <tr>
+                    <td>End Text</td>
+                    <td><textarea name="txtEnd" id="txtEnd" cols="50" rows="10">I believe I would be a great candidate as I apply myself to all occasions, can work with people of different backgrounds and levels of authority. I have the necessary experience to work on this project and create value. Please feel free to give me a call if you have any questions you would like to discuss </textarea>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>PS (Extra)</td>
-                <td><textarea id="txtPS" cols="50" rows="10">I am focused on getting contracting offers. I welcome this opportunity and looking forward to hearing from you.</textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>Visa</td>
-                <td><textarea id="txtVisa" cols="50" rows="10">I hold an ECAA visa to do business in the United Kingdom. I have been contracting in the UK from 2017</textarea>
-                </td>
-            </tr>
-        </table>
+                <tr>
+                    <td>PS (Extra)</td>
+                    <td><textarea id="txtPS" cols="50" rows="10">I am focused on getting contracting offers. I welcome this opportunity and looking forward to hearing from you.</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Visa</td>
+                    <td><textarea id="txtVisa" cols="50" rows="10">I hold an ECAA visa to do business in the United Kingdom. I have been contracting in the UK from 2017</textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <p id="txtoutput"></p>
+        <hr>
+        <p id="txtMatchHeader"><strong>Matching Skills</strong></p>
+        <p id="txtSkills"></p>
+        <hr>
     </div>
-
-    <p id="txtoutput"></p>
-    <hr>
-    <p id="txtMatchHeader"><strong>Matching Skills</strong></p>
-    <p id="txtSkills"></p>
-    <hr>
     <input class="button" id="mySubmit" value="Create Cover Letter" />
     <input class="button" id="myRewrite" value="New" />
+    <button class="button" onclick="CopyToClipboard('div1')">Copy Cover Letter</button>
 </body>
 
 </html>
