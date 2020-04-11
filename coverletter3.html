@@ -282,6 +282,8 @@
                 location.reload();
             });
 
+
+            $("#copyButton").hide();
             $("#chkCompany").click(function() {
                 if ($(this).is(":checked")) {
                     $("#txtCompany").val("your company");
@@ -316,7 +318,7 @@
 
 
             $("#mySubmit").click(function() {
-
+                $("#copyButton").show();
                 var txtWho = $("#txtWho").val();
                 result = result.concat("Dear ");
                 result = result.concat(txtWho);
@@ -428,7 +430,7 @@
     </div>
     <input class="button" id="mySubmit" value="Create Cover Letter" />
     <input class="button" id="myRewrite" value="New" />
-    <button class="button" onclick="CopyToClipboard('div1')">Copy Cover Letter</button>
+    <button id="copyButton" class="button" onclick="CopyToClipboard('div1')">Copy Cover Letter</button>
 </body>
 
 </html>
