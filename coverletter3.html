@@ -265,6 +265,13 @@
                 location.reload();
             });
 
+            $("#chkCompany").click(function() {
+                if ($(this).is(":checked")) {
+                    $("#txtCompany").val("your company");
+                }
+
+            });
+
             $("#chkUpwork").click(function() {
                 if ($(this).is(":checked")) {
                     $("#txtWho").val("Upwork Bidder");
@@ -326,7 +333,6 @@
 
                 result = result.concat("<ul>");
                 result = result.concat("<li>");
-                result = result.concat("*");
                 result = result.concat("https://www.linkedin.com/in/rifaterdemsahin/");
                 result = result.concat("</li>");
                 result = result.concat("</ul>");
@@ -370,7 +376,7 @@
 
             <tr>
                 <td>Which company to apply ?</td>
-                <td><input id="txtCompany" /></td>
+                <td><input id="txtCompany" /><input id="chkCompany" type="checkbox">your company</td>
             </tr>
 
             <tr>
