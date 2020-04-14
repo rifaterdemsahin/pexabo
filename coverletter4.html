@@ -278,6 +278,16 @@
             myTable = myTable.concat("</table>");
             $("#txtSkills").html(myTable);
 
+            $("#myCheckAll").click(function() {
+
+                $('#mytableSkills').find(':checkbox').each(function() {
+                    $(this).prop('checked', 'checked');
+                });
+
+            
+            });
+            
+           
             var result = "";
             $("#myRewrite").hide();
             $("#myRewrite").click(function() {
