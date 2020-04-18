@@ -113,134 +113,133 @@
 
         $(document).ready(function() {
 
-         var dict = new Object();
-            dict["CD"] = "I have built more than 10 CI/CD pipelines which include Jenkin, TeamCity, Octopus Deploy and Azure DevOps implementing of DevOps principles. I have  worked in Unity Cloud Build* and created extensive architectures for DevOps on virtual reality environments.";
-            dict["Angular"] = "I have worked on multiple Angular projects. For example, my Scottish Enterprise contract was based on a pipeline that I have deployed .Net microservices with Azure Web Apps and API Gateway in Azure.";    
-            dict["Git"] = "I have worked on multiple open source projects using Git, Github and Github."; 
-            dict["CDN"] = "I have worked in multiple CDN systems including Akamai and AWS Cloud front. These are active systems that are getting used all over the world.";    
-            dict["IaC"] = "I have worked with IaC tools such as Chef, Bash and Terraform in my Concentra contract.";    
-            dict["Powershell"] = "I have used PowerShell, Octopus Deploy in my Smartspace contract to build one of the biggest implemented meeting automation systems in the world.";    
-            dict["Continuous Delivery"] = "I  promote  continuous delivery and deployment so I would be a great candidate to work in agile environments.";    
-            dict["CloudFront"] = "I have implemented cloudfront CDN system and created workflows around validations and https/certificate management.";    
-            dict["Azure"] = "I have worked as a Cloud Solution Architect in Microsoft, implementing Azure solutions for top enterprises. I have the necessary certificates to implement solutions in Azure.";    
-            dict["Design patterns"] = "I have completed more than 2 years on research projects relating to software design patterns. I worked on the project of Joe Yoder referencing the work of gang of four.";    
-            dict["AWS"] = "I have been working at AWS from its early days. I have built autoscaling groups for EC2 even when they did not exist in Amazon web services.";    
-            dict["Pipelines"] = "I have built pipelines using different tools such as Jenkins, TeamCity, UCB, Octopus, Azure DevOps, Github Actions.";    
-            dict["Docker"] = "I have worked on Docker implementing microservices, for example, MMT contract for building Ireland train ticketing systems in Azure Application Service environments deploying Docker containers.";    
-            dict["Linux"] = "I have worked on multiple Linux projects including RedBox, MMT and Concentra contracts.";    
-            dict["Scrum"] = "I have more than 2 years working experience on projects such as a Scrum master. I converted the projects to Kanban after Scrum's shortcomings. I managed extreme programming teams to deliver high performance.";    
-            dict["Kanban"] = "I have done more than 2 projects on Kanban which I have converted to Kanban after Scrum's shortcomings.";    
-            dict["Infrastructure As Code"] = "I have managed and provisioned resources in the cloud using declarative and imperative styles using IaC( Infrastructure as Code ).I have used tools such as Ansible and Azure Resource Manager, Terraform and AWS Cloud formation.";    
-            dict["Documentation"] = "I lead the documentation efforts in the projects. I use Rational Unified Process structure for my technical writing.";    
-            dict["Rational Unified Process"] = "I lead the documentation efforts in the projects. I use Rational Unified Process structure for my technical writing.";    
-            dict["Databases"] = "I have worked with many database systems. I have implemented many systems including SQL and NoSql systems which i have architectured using CAP theory.";           
-            dict["Cap"] = "I have worked with many database systems. Implemented many systems including SQL and NoSql systems which i have architectured using CAP theory.";    
-            dict["Solid"] = "I am a strong believer in Object-oriented design. Implemented in +4 projects using Solid design principles.";    
-            dict["Cap"] = "I have worked with many database systems. Implemented many systems including SQL and NoSql systems which i have architectured using CAP theory.";    
-            dict["DevOps"] = "I worked as a Devops contractor because continuous delivery is my passion. I implemented solutions with Teamcity, Appveyor, Jenkins, Octopus and Azure DevOps for more than 10 contracts.";    -
-            dict["Test Driven Development"] = "I believe in the power of test-driven development. Binding the tests CI systems is one of the responsibilities.";    
-            dict["Microservices"] = "I have built more than 20 projects using microservices. I believe in the divide and conquer concept. Familiar with Patterns of Enterprise Application Architecture.";    
-            dict["Cloud"] = "I have used Cloud to built servers and Cl platforms using PAAS, IAAS, and SAAS on multiple different vendors.";    
-            dict["UML"] = "I have done more than 2 research projects, focusing on abstract designs using Unified modeling language (UML).";    
-            dict["Object-Oriented Design"] = "I have been awarded as MVP from an object-oriented database. I have implemented SOLID principles in multiple projects.";    
-            dict["Open Source"] = "I have experience working on multiple open-source projects and active contributor in Github.";    
-            dict["Code Quality"] = "I have worked as a manager in Accenture responsible for managing SonarQube with a team of 100 developers, ensuring the code quality and technical debt management.";    
-            dict["Add Server"] = "I have built an Add Server system leveraging the AWS infrastructure to host a billion views per day.";    
-            dict["SEO (Search Engine Optimization)"] = "I have managed multiple websites and Search Engine Optimization  generated millions of views and analyzed using Google Analytics.";    
-            dict["SEM (Search Engine Marketing)"] = "I have managed more than 100k in Google AdWords and Search Engine Marketing generated 5m revenue of an online business.";    
-            dict["Social Media"] = "I have automation Social Media systems to publish marketing materials to Linkedin with tools such as Buffer and Slack.";    
-            dict["UI Path"] = "I have built automated UI Path application systems on Linkedin. I also created a network of 20k recruiters to land contracts using CSharp and the automation framework.";    
-            dict["Unity"] = "I have built games with Unity in 2D and 3D. I have worked in projects to realize DevOps pipelines with UCB.";    
-            dict["Continuous Integration"] = "I created build servers and Continuous Integration implemented Git flow daily integrations.";  
-            dict["Agile"] = "Love the live approach motivation is the key for progress.";
-            dict["Security"] = "I configured Firewall management of Networks, DB access control list management, Intercloud Connectivity VPN setups, endpoint security with CORS for security.";    
-            dict["Extreme programming"] = "I’m an avid learner about methodologies, XP is a great way for Extreme programming. I accomplished more than 5 projects. With XP.";    
-            dict["AWS Fargate"] = "I can run AWS Fargate containers without having to manage servers or clusters.";    
-            dict["Zoho"] = "I implemented various products from Zoho such as site 24x7 for actively monitoring the resources.";    
-            dict["Google"] = "I implemented various products from Google such as maps, drive, enterprise email and cloud platform GCP.";    
-            dict["Nopcommerce"] = "I used Nopcommerce for 1 project. Great open-source framework. Rebuild the pluscanvas.com.";    
-            dict["NetScaler"] = "I used NetScaler for more than 2 projects. Load balancing for colocation sites. Prefer to use the cloud load balancers such as Amazon and Cloudflare.";    
-            dict["NCache"] = "I used NCache for 1 project. Distributed caching system for .net. I used it in a sports gambling system where scores were changing constantly.";    
-            dict["Selenium"] = "I used  Selenium for more than 3 projects. Believe in continuous delivery and test automation. Creating acceptance tests using C# drivers and integrating them into continuous delivery systems. I used BrowserStack for a remote driver.";    
-            dict["Bitcoin"] = "I used Bitcoin for 1  project. Distributed peer 2 peer system. I used API’s to do transactions and set up the SAS environments.";    
-            dict["Servicebus"] = "I used Azure Servicebus for more than 2 projects which included financial trading platform for notifications and ESB implementation.";    
-            dict["Yourkit.net"] = "I used Yourkit.net for more than 8 projects. I’m passionate about performance and memory optimization in projects.";    
-            dict["APM"] = "I worked on APM  multiple application performance management tools such as New Relic and Application Insights.";    
-            dict["Mercurial"] = "I have used Mercurial for 1 project. I migrated the libraries from on premise to the cloud at bitbucket using Git.";    
-            dict["CDN (Content Delivery Network) "] = "I have used Content Delivery Network in multiple projects. I have used it for an ad server platform with millions of users.";    
-            dict["Nuget Package manager"] = "I have built Nuget Package manager for more than 3 projects. I used cloud NuGet Package manager servers for internal libraries.";   
-            dict["Package Management"] = "I have built Nuget Package manager for more than 3 projects. I used cloud NuGet Package management servers for internal libraries.";    
-            dict["Git"] = "I have used Git for more than 5 projects. I did migrations from CVS and TFS to Git. Used bitbucket and stash (GitFlow).";    
-            dict["TFS Team Foundation Server"] = "I have used Team Foundation Server for more than 5 projects to setup and configure environments.";    
-            dict["New Relic"] = "I have used New Relic, a great tool for monitoring websites application performance and cloud-based software, for more than 2 projects."    
-            dict["Azure Logic Apps"] = "I have used Azure Logic Apps to build more than 3 enterprise integration workflows.";    
-            dict["Clickatell"] = "I have used Clickatell for more than 2 projects. I used their API in two-factor authentication and for marketing purposes.";    
-            dict["Bamboo"] = "I have used  Bamboo for more than 2 projects. The server is in charge of code quality and integration parts with the Sonar.";    
-            dict["Appveyor"] = "I have used Appveyor for more than 20 projects, learning from its co-founder. I’m passionate about the subject of continuous delivery.";    
-            dict["Teamcity"] = "I have used Teamcity for more than 10 projects. For example, Broadgate sports microservices were getting deployed using TeamCity.";    
-            dict["Cloudflare"] = "I have used Cloudflare for a project using dynamic scaling.";    
-            dict["Mozy Backup Service"] = "I have built for more than 2 projects using Mozy Backup Service to backup relational databases for disaster recovery.";    
-            dict["Eclipse"] = "I managed 20 java projects for code quality in Eclipse.";    
-            dict["Asp.Net"] = "I have used Asp.Net. for more than 8 projects. The framework is to build Webforms and MVC.";    
-            dict["Netbeans"] = "I have taught lessons to undergraduate students using Java Netbeans.";    
-            dict[".Net"] = "I have used  .Net for more than 10 projects. I used  IoC frameworks such as Unity. I have more experience in backend development.";    
-            dict["JQuery"] = "I have used AngularJS and fquery for more than 5 projects. I did front-end development with many different frameworks.";    
-            dict["Entity Framework"] = "I used ORM (Object-Relational Mapping) technique for more than 6 projects in Entity Framework.”;
-            dict["Amazon Workspaces"] = "I’m a personal user of Amazon Workspaces.";
-            dict["Trello"] = "I have used Trello for Scrum and Kanban based project management.";    
-            dict["Monday.com"] = " I have used Monday.com for task management of an agile marketing team.";    
-            dict["Azure Resource Templates"] = "I created Infrastructure as code . I Implemented Azure Resource Templates continuous deployment pipelines";
-            dict["Open Source"] = "I used various open source technologies such as Linux, ubuntu, Jenkins, NoSQL systems like Redis,";   
-            dict["Azure"] = "I am using multiple services in Azure. Thinking of becoming an Azure architect. Build +3 projects. Used PaaS features such as Azure websites and built +10 microservices and integrated with other Azure services.";    
-            dict["Amazon Web Services"] = "I am using multiple services in Amazon Web Services (AWS). Thinking of becoming an AWS Architect. Tools: EC2, CloudFormation, Lambda, Step functions, FarGate, Gateways, Cloud formation, Build Pipeline +5 projects.";
-            dict["Windows Server"] = "I have used and set up colocation servers. Prefer to use the cloud. +20 Powershell scripts for continuous integration.";    
-            dict["Docker"] = "I have used  Docker containers and microservice implementation";    
-            dict["MacOs"] = "I use Mac OS X on a daily basis. I use such as terminal.";    
-            dict["Ubuntu"] = "I use Ubuntu on a daily basis to work as a Linux System  Administrator for multiple contracts.";    
-            dict["Linux"] = "I used Automation tasks, testing systems, containers, Cloud and on-premise, Digital Ocean, Ubuntu, Linux.";    
-            dict["Powershell"] = "I used Powershell for Automation scripts to create the deployment pipeline.";   
-            dict["Service Fabric"] = "I used Service Fabric to deploy microservices and set up with ARM.";    
-            dict["Octopus"] = "I migrated from VSTS to Octopus for Service Fabric Deployments.";    
-            dict["Terraform"] = "I used  IAC for the projects to implement immutable infrastructure using Terraform.";    
-            dict["Ansible"] = "I have built IAC for the projects to implement immutable infrastructure using Ansible.";   
-            dict["SSH"] = " I managed the daily usage of SSH server in the cloud.";    
-            dict["Bash"] = "I managed the daily usage of Bash server in the cloud.";    
-            dict["Chef"] = "I have used Chef and  PoC’s for the Microsoft Azure platform.";    
-            dict["Puppet"] = "I have used Puppet and PoC’s for the Microsoft Azure platform.";    
-            dict["Apple"] = "I have used Apple technology for example MacOs, Itunes App Store deployments.";    
-            dict["Oculus"] = "I have  used Oculus for Defense systems training program backend orchestration with distribution.";    
-            dict["VR"] = "I have used VR for  Defense systems training program backend orchestration with distribution.";    
-            dict["Unity 3D"] = "I have built Unity 3D for more than 5 projects. Focused on Artificial intelligence systems.";    
-            dict["VSTS"] = "I delivered more than  5 projects using Visual Studio Online Used scrum and kanban, created burndown charts.";    
-            dict["Visual studio"] = "I have built for more than 10 projects. Avid learner. I love channel";    
-            dict["ElasticSearch"] = "I have built ElasticSearch for a project. Love the idea and the distributed databases and the search database concept";    
-            dict["Db40"] = "I have used Db40 for more than 2 projects. I became a MVP of the object oriented database.";    
-            dict["MySQL"] = "I have built MySQL in my discakademi project which has million unique users in Turkey's biggest hr assessment system.";    
-            dict["Redis"] = "I have used Redis for more than 3 projects. For example, addserver with online analytics.";    
-            dict["Amazon RDS"] = "I have built more than 4 projects on Amazon RDS";    
-            dict["Dynamodb"] = "I used Dynamodb for more than 4 projects. I have used it in a project with dynamic scaling attributes.";    
-            dict["Hadoop"] = "I have used  Hadoop for more than 2 projects. I have used it in adserver, PoC in UniCredit.";    
-            dict["SQL Server"] = "I have used  SQL Server for more than 6 projects. I am experienced with ETL transformations. I have worked on Oracle to SQL server migration for telecom companies for high scale implementations.";    
-            dict["Mongodb"] = "I have used  Mongodb for more than 2 projects. I have used on premise and the cloud versions such as ObjectRocket.";    
-            dict["Python"] = "I used Python language  for devops automation scripting and debugging.";   
-            dict["Javascript"] = "I used Javascript for more than 6 web projects including trading engines and sports side with many interactions.";             
-            dict["Java"] = "I gave java courses more than a year for college undergraduates. I did code quality control for the top banks in Europe.";    
-            dict["C#"] = "I used CSharp for more than 10 projects in 8 years.";    
-            dict["Ruby"] = "I have managed to publish an open-source project based on building ventilators using Ruby.";    
-            dict["Gem"] = "I have managed to use Gem on my Mac to build a Ruby CMS Jekyll which works in github.io.";    
-            dict["Jekyll"]="I have managed to publish using a Ruby CMS Jekyll.";
-            dict["d365"] = "I have worked in the Scottish government to integrate Azure DevOps to AX/D365";
-            dict["Data Center"] =" I have worked in Microsoft as a cloud solution architect and implemented workloads on Microsoft Azure Datacenter.";
-            dict["Site Reliability Engineering"] = "I have worked as a DevOps contractor implementing best practices in site reliability engineering.";
-            dict["Security"] =" I implemented best security practices and pentests in my contracts more than 5 projects";
-            dict["Pentest"] =" I implemented best security practices and pentests in my contracts more than 5 projects";
-            dict["Workflow"] ="I have used AWS step functions as workflows to invalidate AWS Cloud front CDN systems"; 
-            dict["Iac"] = "I have managed and provisioned resources in the cloud using declarative and imperative styles using IaC( Infrastructure as Code).I have used tools such as Ansible and Azure Resource Manager, Terraform and AWS Cloud formation";    
-            dict["Technical Writing"] = "I lead the documentation efforts in the projects. I use Rational Unified Process structure for my technical writing.";
-            dict["Microsoft CRM"] = "I have worked with Microsoft CRM in my Scottish Government project where I orchestrated a microservice solution hosted in Azure DevOps. I have also created a bespoke CRM solution based on salesforce.com. I have managed and supported the bespoke CRM application for three years.";
-            dict["AX/d365"] = "I have worked with Microsoft CRM, AX/d365 in my Scottish Government project where I orchestrated a microservice solution hosted in Azure DevOps. I have also created a bespoke CRM solution based on salesforce.com. I have managed and supported the bespoke CRM application for three years.";
-            dict["AX"] = "I have worked with Microsoft CRM, AX in my Scottish Government project where I orchestrated a microservice solution hosted in Azure DevOps. I have also created a bespoke CRM solution based on salesforce.com. I have managed and supported the bespoke CRM application for three years.";
-            dict["Integration"] = "I build multiple integration projects which I have used Azure DevOps for more than 10 contracts.";
+            var dict = new Object();
+ dict["CD"] = "I have built more than 10 CI/CD pipelines which include Jenkin, TeamCity, Octopus Deploy and Azure DevOps implementing of DevOps principles. I have worked in Unity Cloud Build* and created extensive architectures for DevOps on virtual reality environments.";	 
+ dict["Angular"] = "I have worked on Angular on multiple projects, for example, my Scottish Enterprise contract was based on a pipeline which I have deployed .Net microservices build on Azure Web Apps and API Gateway in Azure*.";	 
+ dict["Git"] = "I have worked in multiple open source projects including Git and Github, Github Actions which I have mentioned in the references using the AWS Cloud front CDN systems.";	 
+ dict["CDN"] = "I have worked in multiple CDN systems including Akamai and AWS Cloud front. These are active systems that are getting used all over the world.";	 
+ dict["IaC"] = "I have worked with IaC tools such as Chef, Bash and Terraform in my Concentra contract.";	 
+ dict["Powershell"] = "I have used PowerShell, Octopus Deploy in my Smartspace contract to build one of the biggest implemented meeting automation systems in the world.";	 
+ dict["Continuous Delivery"] = "I am an advocate of continuous delivery and deployment so I would be a great candidate to create the environments.";	 
+ dict["Cloud Front"] = "I have implemented multiple CDN systems and created workflows around validations and https/certificate management";	 
+ dict["Azure"] = "I have worked as a Cloud Solution Architect in Microsoft. Implementing Azure solutions for top enterprises. I have necessary certificates to implement solutions in Azure";	 
+ dict["Design patterns"] = "I have completed +2 research projects relating to design patterns. I did work on the project of Joe Yoder implementing multiple design patterns.";	 
+ dict["AWS"] = "I have been working in AWS from its early days. I have build autoscaling groups for EC2 even when they did not exist in Amazon web services.";	 
+ dict["Pipelines"] = "I have build pipelines using different tools such as Jenkins, TeamCity, UCB, Octopus, Azure DevOps, Github Actions";	 
+ dict["Docker"] = "I have worked on Docker implementing microservices example MMT contract for building Ireland train ticketing systems";	 
+ dict["Linux"] = "I have worked on multiple Linux projects including RedBox, MMT and Concentra contracts";	 
+ dict["Scrum"] = "I have +2 projects on worked as Scrum master. Converted to Kanban after Scrum's shortcomings. I Love the active teams and communication for the work in progress limits. The idea and the implementation is great";	 
+ dict["Kanban"] = "I have +2 projects on worked as Kanban converted to Kanban after Scrum's shortcomings. I love the active teams and communication for the work in progress limits. The idea and the implementation is great";	 
+ dict["Infrastructure As Code"] = "Process of managing and provisioning in the cloud using declarative and imperative styles.Tools such as Ansible and Azure Resource Manager";	 
+ dict["Documentation"] = "Doing the documentation in the projects using Rational Unified Process. Care about lean and useful documentation.";	 
+ dict["Rational Unified Process"] = "Doing the documentation in the projects. Care about lean and useful documentation.";	 
+ dict["Databases"] = "Worked with many database systems. Implemented many systems including SQL and NoSql systems.";	 
+ dict["Cap"] = "Worked with many database systems. Implemented many systems including SQL and NoSql systems.";	 
+ dict["Solid"] = "Strong believer in Object oriented design. Implemented in +4 projects.";	 
+ dict["DevOps"] = "Continuous delivery is the passion. Implemented Teamcity and Appveyor in +3 projects";	 
+ dict["Test Driven Development"] = "Believe the power of test-driven development. Binding the tests CI systems is one of the responsibilities.";	 
+ dict["Microservices"] = "Build +20 microservices for +4 projects. Believe in the divide and conquer concept. Familiar with Patterns of Enterprise Application Architecture";	 
+ dict["Cloud"] = "I have build platforms using PAAS, IAAS, and SAAS on multiple different vendors.";	
+ dict["UML"] = "I have done 2 research projects. Focusing on abstract designs using Unified modeling languages.";	 
+ dict["Object-Oriented Design"] = "I have been awarded as MVP from an object-oriented database. I have implemented SOLID principles in multiple projects.";	 
+ dict["Open Source"] = "Multiple open-source projects and active contributor in Github";	 
+ dict["Code Quality"] = "I have worked as a manager in Accenture responsible for managing SonarQube with a team of 100 developers ensuring the code quality and technical debt management";	 
+ dict["Add Server"] = "Build and ad server system leveraging the AWS infrastructure to host a billion views per day.";	 
+ dict["SEO(Search Engine Optimization)"] = "I have managed multiple websites and generated millions of views and analyzed using Google Analytics";	 
+ dict["SEM(Search Engine Marketing)"] = "I have managed +100k in Google Adwords and generated 5m revenue of online business";	 
+ dict["Social Media"] = "I have automation systems to publish marketing materials to Linkedin with tools such as Buffer and Slack";	 
+ dict["UI Path"] = "I have built automated application systems on Linkedin. Created a network of 20k recruiters to land contracts using CSharp and the automation framework.";	 
+ dict["Unity"] = "I have build games with Unity in 2D and 3D. I have worked in projects to realize DevOps pipelines with UCB";	 
+ dict["Continuous Integration"] = "Created build servers and implemented Git flow. Daily integrations"	 
+ dict["Agile"] = "Love the live approach motivation is the key for progress."	 
+ dict["Security"] = "Firewall management of networks, Db access control list management, Intercloud Connectivity VPN setups, endpoint security with CORS"	 
+ dict["Extreme programming"] = "Avid learner about methodologies, XP is a great way for this. Using the methods in +5 projects."	 
+ dict["Fargate"] = "Run containers without having to manage servers or clusters."	 
+ dict["Zoho"] = "Implemented various products from Zoho such as site24x7 for actively monitoring the resources"	 
+ dict["Google"] = "Implemented various products from Google such as maps, drive, enterprise email, cloud platform GCP"	 
+ dict["Nopcommerce"] = "Used +1 project. Great open source framework. Rebuild the pluscanvas.com"	 
+ dict["NetScaler"] = "Used it +2 project. Load balancing for colocation sites. Prefer to use the cloud load balancers such as Amazon and Cloudflare"	 
+ dict["NCache"] = "Used +1 project. Distributed caching system for .net. Used it in a sports gambling system where scores were changing constantly"	 
+ dict["Selenium"] = "Used in +3 projects. Believe in continuous delivery and test automation. Creating acceptance tests using c# drivers and integrating them into continuous delivery systems. Used BrowserStack for a remote driver."	 
+ dict["Bitcoin"] = "Used +1 projects. Distributed peer 2 peer system. Used its Apis to do transactions and setup the SAS environments"	 
+ dict["Servicebus"] = "Used in +2 projects Used Azure service bus in a trading platform for notifications.ESB implementation"	 
+ dict["Yourkit.net"] = "Used in +8 projects. Performance and memory optimization is a passion. "	 
+ dict["APM"] = "Worked on multiple application performance management tools. From New Relic to Application Insights"	 
+ dict["Mercurial"] = "Build +1 projects. Migrated the libraries from in house to the cloud at bitbucket"	 
+ dict["Cdn"] = "Build +2 projects. Used it in ad server platforms with daily millions of users."	 
+ dict["Nuget"] = "Build +3 projects.Used cloud nuget servers for internal libraries."	 
+ dict["Package Management"] = "Worked and managed multiple Nuget libraries and NPM"	 
+ dict["Git"] = "Build +3 project. Did conversions from CVS and TFS to git. Used bitbucket and stash( GitFlow)"	 
+ dict["TFS"] = "Build +5 projects. Did the setup and configuration"	 
+ dict["New Relic"] = "Build +2 projects. Great tool for monitoring websites application performance"	 
+ dict["Logic Apps"] = "Build enterprise integration workflows"	 
+ dict["Clickatell"] = "Build +2 projects. Used their API in two-factor authentication and for marketing purposes."	 
+ dict["Bamboo"] = "Build +5 projects.In charge of code quality and integration parts with the Sonar."	 
+ dict["Appveyor"] = "Build +20 projects. Learning from its co-founder. And passionate about the subject of continuous delivery."	 
+ dict["Teamcity"] = "Build +10 projects using TeamCity. Broadgate sports microservices where getting deployed using TeamCity"	 
+ dict["Cloudflare"] = "Build +1 projects.Using cloudflare for dynamic scaling and for devops"	 
+ dict["Mozy"] = "Build +2 projects. Backed up relational databases for disaster recovery."	 
+ dict["Eclipse"] = "Build +1 projects. In charge of +20 java projects for code quality"	  
+ dict["Asp.Net"] = "Build +8 projects. Used Webforms and MVC"	  
+ dict["Netbeans"] = "Taught lessons to undergraduate students for Java"	  
+ dict[".Net"] = "Build +10 projects. Concentrated on IoC frameworks such as Unity. Have more experience in backend development"	 
+ dict["JQuery"] = "Build +5 projects.Did frontend development and keeping up to date with frameworks such as AngularJS."	   
+ dict["Entity Framework"] = "Love ORM concept. Used EF in +6 projects"	 
+ dict["Amazon Workspaces"] = "Personal user of Amazon Virtual Workspace offering. Mobile and cloud-based"	 
+ dict["Trello"] = "Scrum and Kanban based task management "	 
+ dict["Monday.com"] = "Task management of an agile marketing team"	 
+ dict["Azure Resource Templates"] = "Created Infrastructure as code . Implemented continuous deployment pipelines"	 
+ dict["Open Source"] = "Used various open source technologies. Such as linux,ubuntu,jenkins,nosql systems like Redis,"	 
+ dict["Azure"] = "Using multiple services in Azure. Thinking of becoming an Azure architect. Build +3 projects. Used PaaS features such as Azure websites and build +10 microservices and integrated with other Azure services."	 
+ dict["Amazon Web Services"] = "Using multiple services in AWS. Thinking to become an AWS Architect.Tools: EC2,CloudFormation,Lambda,Step functions,FarGate,Gateways,Cloud formation,Build Pipeline +5 projects"	 
+ dict["Windows Server"] = "Used and set up colocation servers. Prefer to use the cloud. +20 Powershell scripts for continuous integration."	 
+ dict["Docker"] = "Containers and microservice implementation"	 
+ dict["MacOs"] = "Daily usage of terminal, Unix-like Mac OS X"	 
+ dict["Ubuntu"] = "Daily usage of Ubuntu 19"	 
+ dict["Linux"] = "Automation tasks, testing systems, containers, Cloud and on-premise, Digital Ocean, Ubuntu"	 
+ dict["Powershell"] = "Automation scripts to create the deployment pipeline"	 
+ dict["Service Fabric"] = "Deployment of microservices and setting up with ARM"	 
+ dict["Octopus"] = "Migration from VSTS to Octopus for Service Fabric Deployments"	 
+ dict["Terraform"] = "Build Iac for the projects to implement immutable infrastructure using Terraform"	 
+ dict["Ansible"] = "Build Iac for the projects to implement immutable infrastructure using Ansible"	 
+ dict["SSH"] = "Daily usage to manage servers in the cloud"	 
+ dict["Bash"] = "Daily usage to manage servers in the cloud"	 
+ dict["Chef"] = "Build PoC’s for the Microsoft Azure platform"	   
+ dict["Puppet"] = "Build PoC’s for the Microsoft Azure platform"	 
+ dict["Apple"] = "MacOs,Itunes App Store deployments"	 
+ dict["Oculus"] = "Defense systems training program backend orchestration with distribution"	 
+ dict["VR"] = "Defense systems training program backend orchestration with distribution"	 
+ dict["Unity 3D"] = "Build +5 projects. Focused on Artificial intelligence systems"	 
+ dict["VSTS"] = "Delivered +5 projects using Visual Studio Online Used scrum and kanban, created burndown charts"	 
+ dict["Visual studio"] = "Build +10 projects. Avid learner. Love channel9"	 
+ dict["ElasticSearch"] = "Build +1 projects. Love the idea and the distributed databases and the search database concept"	 
+ dict["Db40"] = "Build +2 projects. Became a MVP."	 
+ dict["MySQL"] = "I have to build MySQL project in my disc academy project which was used with million unique users in Turkey's biggest hr assessment system"	 
+ dict["Redis"] = "Build +3 projects. Addserver with online analytics"	 
+ dict["Amazon RDS"] = "Build +4 projects"	 
+ dict["Dynamodb"] = "Build +2 projects. Used it in a project with dynamic scaling attributes."	 
+ dict["Hadoop"] = "Build +2 projects .Used it in adserver, PoC in UniCredit"	 
+ dict["SQL Server"] = "Build +6 projects. Did +4 ETL transformations. Did Oracle to SQL server migrations. Did 32 bit to 64-bit migrations for telecom companies."	 
+ dict["Mongodb"] = "Build +2 projects with it. Used on-site and the cloud versions with ObjectRocket"	 
+ dict["Python"] = "Used for devops automation scripting and debugging"	 
+ dict["Javascript"] = "I have to build Javascript more than +6 web projects including trading engines and sports side with many interactions"	 
+ dict["Java"] = "I gave java courses more than a year for college undergraduates. Did code quality control for the top banks in Europe."	 
+ dict["C#"] = "I have used CSharp for more than +10 projects in 8 years"	 
+ dict["Ruby"] = "I have managed to publish an open-source project based on building ventilators using Ruby"	 
+ dict["Gem"] = "I have managed to use Gem on my Mac to build a Ruby CMS Jekyll which works in github.io"	 
+ dict["Jekyll"]="I have managed to publish using a Ruby CMS Jekyll"
+ dict["Pentest"] = "Implemented best security practices and pentests in my contracts more than 5 projects." 
+ dict["Security"] = "Implemented best security practices and pentests in my contracts more than 5 projects."
+ dict["Workflow"] = "I have used AWS step functions as workflows to invalidate AWS Cloud front CDN systems"
+ dict["IaC"] = "I have managed and provisioned resources in the cloud using declarative and imperative styles using IaC( Infrastructure as Code ).I have used tools such as Ansible and Azure Resource Manager, Terraform and AWS Cloud formation"
+ dict["Technical Writing"] = "I lead the documentation efforts in the projects. I use Rational Unified Process structure for my technical writing"
+ dict["Data Center"] = "I have worked in Microsoft as a cloud solution architect and implemented workloads on Microsoft Azure Datacenter"
+ dict["Site Reliability Engineering"] = "I have worked as a DevOps contractor implementing best practices in site reliability engineering."
+ dict["CD"]="I have built more than +10 projects CI/CD pipelines which include Jenkins, TeamCity and Octopus Deploy. I have experience in Azure DevOps Software and implementing DevOps principles. I have worked in  Unity Cloud Build and created extensive architectures for DevOps on Virtual Reality environments."
+ dict["Technical Writing"] = "I lead the documentation efforts in the projects. I use Rational Unified Process structure for my technical writing"
+ 
+
+
 
 
             var sorted = [];
@@ -298,7 +297,9 @@
                     $(this).prop('checked', 'checked');
                 });
 
+            
             });
+
 
             var result = "";
             $("#myRewrite").hide();
@@ -392,8 +393,6 @@
                 $("#mytableSkills").hide();
                 $("#mytableHolder").hide();
                 $("#txtMatchHeader").hide();
-                $("#myCheckAll").hide();
-
                 $("#mySubmit").hide();
 
                 $("#myRewrite").show();
@@ -452,7 +451,7 @@
         <hr>
         <p id="txtMatchHeader"><strong>Matching Skills</strong></p>
         <input class="button" id="myCheckAll" value="Check All" />
-        <p id="txtSkills"></p>
+        <p id="txtSkills"></p>  
         <hr>
     </div>
     <input class="button" id="mySubmit" value="Create Cover Letter" />
