@@ -47,7 +47,7 @@
         }
         /* Hide the browser's default checkbox */
         
-        .container input {
+        .myContainer input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
@@ -66,12 +66,12 @@
         }
         /* On mouse-over, add a grey background color */
         
-        .container:hover input~.checkmark {
+        .myContainer:hover input~.checkmark {
             background-color: #ccc;
         }
         /* When the checkbox is checked, add a blue background */
         
-        .container input:checked~.checkmark {
+        .myContainer input:checked~.checkmark {
             background-color: #2196F3;
         }
         /* Create the checkmark/indicator (hidden when not checked) */
@@ -83,12 +83,12 @@
         }
         /* Show the checkmark when checked */
         
-        .container input:checked~.checkmark:after {
+        .myContainer input:checked~.checkmark:after {
             display: block;
         }
         /* Style the checkmark/indicator */
         
-        .container .checkmark:after {
+        .myContainer .checkmark:after {
             left: 9px;
             top: 5px;
             width: 5px;
@@ -120,11 +120,16 @@
         $(document).ready(function() {
 
             var dict = new Object();
+
+            dict["ChatOps"] = "I have created live documentation systems using automation and slack to increasse communication effectiveness.";
+            dict["Confluence"] = "I have documented more than projects using RUP on confluence using contentexual commenting and integrating the related parties.";
             dict["CD"] = "I have built more than 10 CI/CD pipelines which include Jenkin, TeamCity, Octopus Deploy and Azure DevOps implementing of DevOps principles. I have worked in Unity Cloud Build* and created extensive architectures for DevOps on virtual reality environments.";
             dict["Angular"] = "I have worked on Angular on multiple projects, for example, my Scottish Enterprise contract was based on a pipeline which I have deployed .Net microservices build on Azure Web Apps and API Gateway in Azure*.";
             dict["Git"] = "I have worked in multiple open source projects including Git and Github, Github Actions which I have mentioned in the references using the AWS Cloud front CDN systems.";
             dict["CDN"] = "I have worked in multiple CDN systems including Akamai and AWS Cloud front. These are active systems that are getting used all over the world.";
+            dict["Screenshot"] = "I have created a library of +100k images using tools like lightshot and greenshot for active photographic memory techniques";
             dict["IaC"] = "I have worked with IaC tools such as Chef, Bash and Terraform in my Concentra contract.";
+            dict["Mindmaps"] = "I have been a top user in Mindmeister for a long time over 10k mindmaps";
             dict["Powershell"] = "I have used PowerShell, Octopus Deploy in my Smartspace contract to build one of the biggest implemented meeting automation systems in the world.";
             dict["Continuous Delivery"] = "I  promote  continuous delivery and deployment so I would be a great candidate to work in agile environments.";
             dict["Cloud Front"] = "I have implemented multiple CDN systems and created workflows around validations and https/certificate management";
@@ -242,8 +247,6 @@
             dict["Site Reliability Engineering"] = "I have worked as a DevOps contractor implementing best practices in site reliability engineering."
             dict["CD"] = "I have managed and provisioned resources in the cloud using declarative and imperative styles using IaC( Infrastructure as Code ).I have used tools such as Ansible and Azure Resource Manager, Terraform and AWS Cloud formation."
             dict["Technical Writing"] = "I lead the documentation efforts in the projects. I use Rational Unified Process structure for my technical writing"
-
-
 
 
 
