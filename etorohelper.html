@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="zxx">
+<!--<![endif]-->
+<!--todo retargetting code-->
+
+<head>
+    <title>Etoro Order Automation</title>
+    <style>
+        label::first-letter { font-size: 116%;color: #fc6f5c;}
+        
+        td,
+        input,
+        label,
+        textarea,
+        p {
+            color: black;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .myButton {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        /* Customize the label (the container) */
+        
+        .myContainer {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        /* Hide the browser's default checkbox */
+        
+        .myContainer input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        /* Create a custom checkbox */
+        
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
+        /* On mouse-over, add a grey background color */
+        
+        .myContainer:hover input~.checkmark {
+            background-color: #ccc;
+        }
+        /* When the checkbox is checked, add a blue background */
+        
+        .myContainer input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+        /* Create the checkmark/indicator (hidden when not checked) */
+        
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        /* Show the checkmark when checked */
+        
+        .myContainer input:checked~.checkmark:after {
+            display: block;
+        }
+        /* Style the checkmark/indicator */
+        
+        .myContainer .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <title>Etoro Automation</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <!--Owl Carousel CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <!--Magnific PopUp CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+    <!--Icofont CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/icofont.css">
+    <!--Animated Headline CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/animated-headline.css">
+    <!--Animate CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!--Bootsnav CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootsnav.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Responsive CSS--
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!--Modanizr JS-->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--Start Preloader-->
+    <div class="site-preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!--End Preloader-->
+
+    <!--Start Body Wrap-->
+    <div id="body-wrap">
+        <!--Start Header-->
+        <header id="header">
+            <nav class="navbar navbar-default bootsnav" data-spy="affix" data-offset-top="10">
+                <!--Start Container-->
+                <div class="container">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="icofont icofont-navigation-menu"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt=""></a>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
+                            <li class="active"><a href="#header">Home</a></li>
+                            <li><a href="index.html#skill-area">Skills</a></li>
+                            <li><a href="index.html#services-area">Services</a></li>
+                            <li><a href="index.html#about-area">About</a></li>
+                            <li><a href="https://calendly.com/pexabo/schedulecall">Schedule a call</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!--End Container-->
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+        <!--End Header-->
+        <div class="container">
+            <header id="header"><strong>Algorithmic Trading Automation Helper</strong> </header>
+            <hr>
+            <header id="header">
+                <p>For recruiters please create the necessary cover letter using this tool.</p>
+            </header>
+            <br>
+            <div id="div1">
+                <div id="mytableHolder">
+
+                    <table id="mytable" class="form">
+                        <tr>
+                            <td>TRADES</td>
+                        </tr>
+
+                        <tr>
+                            <td>USDTRY</td>
+                            <td><input id="txtUSDTRY" /><input id="chkUsdTry" type="checkbox">Sell
+                        <tr>
+                        <tr>
+                            <td>Ocado</td>
+                            <td><input id="txtOcado" /><input id="chkOcado" type="checkbox">Buy
+                        <tr>
+                        <tr>
+                            <td>EasyJet</td>
+                            <td><input id="txtEasyJet" /><input id="chkEasyJet" type="checkbox">Sell
+                        <tr>
+                        <tr>
+                            <td>DAL</td>
+                            <td><input id="txtDal" /><input id="chkDal" type="checkbox">Sell
+                        <tr>
+                        <tr>
+                            <td>Tesla</td>
+                            <td><input id="txtTesla" /><input id="chkTesla" type="checkbox">Sell
+                        <tr>
+
+                    </table>
+                </div>
+                <hr>
+                <input class="myButton" id="mySubmit" value="Create Cover Letter" />
+            </div>
+        </div>
+        <!--Start Footer-->
+        <footer id="footer" class="bg-gray text-center">
+            <div>
+                
+               
+            </div>
+            <p>&copy; DevOps Solution Provider © 2020</p>
+
+            <!--Start Click To Top-->
+            <div class="totop">
+                <a href="#header"><i class="icofont icofont-simple-up"></i></a>
+            </div>
+            <!--End Click To Top-->
+        </footer>
+        <!--End Footer-->
+    </div>
+    <!--End Body Wrap-->
+
+    <!--jQuery JS-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--Bootstrap JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Magnic PopUp JS-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--Isotope JS-->
+    <script src="assets/js/isotope.min.js"></script>
+    <!--Image Loded JS-->
+    <script src="assets/js/images-loded.min.js"></script>
+    <!--Owl Carousel JS-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Animated Headline JS-->
+    <script src="assets/js/animated-headline.js"></script>
+    <!--Bootsnav JS-->
+    <script src="assets/js/bootsnav.js"></script>
+    <!--Main JS-->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
