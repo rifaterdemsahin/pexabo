@@ -10,7 +10,10 @@
 <head>
     <title>Cover Letter Generator</title>
     <style>
-        label::first-letter { font-size: 116%;color: #fc6f5c;}
+        label::first-letter {
+            font-size: 116%;
+            color: #fc6f5c;
+        }
         
         td,
         input,
@@ -122,7 +125,14 @@
         $(document).ready(function() {
 
             var dict = new Object();
-           
+
+            dict["Api"] = "I have build multiple API's in Azure and Amazon using Postman.";
+            dict["Rest"] = "I have build API's and used REST to communicate with 3 rd party systems.";
+            dict["Architect"] = "I have architected more than 10 projects and worked in 30+ contracts using UML and visual tools.";
+            dict["S3"] = "I have used s3 to host serverless websites and store content for CDN.";
+            dict["Dashboard"] = "I have created dashboard systems for Adservers which displayed data from big data sources and Redis for realtime telemetry.";
+
+
             dict["Maven"] = "I have used Maven in Accenture with development teams exceeding 1000 package management users.";
             dict["Scripting"] = "I have used Bash in Linux environments for container orchestration. And I have implemented Powershell in windows environments to setup ServiceFabric based on microservices.";
             dict["XP"] = "I am an avid learner about software methodologies, Extreme programming ( XP ) is a great way for agile implementations. I accomplished more than 5 projects with XP."
@@ -131,9 +141,9 @@
             dict["WAF"] = "I have set up multiple certificates on web access firewalls in Azure understanding HTTP and HTTPS. I have created certificates in AWS and deployed it using serverless websites.";
             dict["Web Access Firewall"] = "I have set up multiple certificates on web access firewalls in Azure understanding HTTP and HTTPS. I have created certificates in AWS and deployed it using serverless websites.";
             dict["Networking"] = "I have been building and managing networks for more than 10 years on-premise and in the cloud.";
-            dict["Security"] = "I did work on multiple DevSecOps projects and implemented security measures to bypass penetration tests.";   
-            dict["DevSecOps"] = "I did work on multiple DevSecOps projects and implemented security measures to bypass penetration tests.";     
-            dict["Logstash"] = "I have created a logging solution in Kuberneted microservices using logstash to shard the logs by date";       
+            dict["Security"] = "I did work on multiple DevSecOps projects and implemented security measures to bypass penetration tests.";
+            dict["DevSecOps"] = "I did work on multiple DevSecOps projects and implemented security measures to bypass penetration tests.";
+            dict["Logstash"] = "I have created a logging solution in Kuberneted microservices using logstash to shard the logs by date";
             dict["Discord"] = "I have been leading a team of 4 using Discord to implement Chatops to boost communication within the team.";
             dict["MyGet"] = "I have used package management system Myget in more than 3 projects implementing microservices and serving common libraries.";
             dict["HTML"] = "I have created an admin portal for an adserver and a CRM system serving more than 100 clients.";
@@ -522,8 +532,8 @@
         </header>
         <!--End Header-->
         <div class="container">
-                        <br/>
-<header id="header"><strong>COVER LETTER GENERATOR FOR ERDEM SAHIN</strong> </header>
+            <br/>
+            <header id="header"><strong>COVER LETTER GENERATOR FOR ERDEM SAHIN</strong> </header>
             <hr>
             <header id="header">
                 <p>For recruiters please create the necessary cover letter using this tool.</p>
