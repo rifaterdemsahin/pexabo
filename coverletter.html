@@ -430,6 +430,10 @@
                 result = result.concat("</br></br>");
                 result = result.concat("<ul>");
                 $('#mytableSkills').find(':checkbox:checked').each(function() {
+                    var key = $(this).attr("mykey");
+                    result = result.concat(key);
+                    result = result.concat(" : ");
+                    
                     var chk = $(this).attr("myanswer");
                     result = result.concat("<li>");
                     result = result.concat(chk);
