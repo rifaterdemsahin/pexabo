@@ -346,7 +346,7 @@
                 var value = dict[key];
                 myTable = myTable.concat("<td>");
                 myTable = myTable.concat("<label class=\"myContainer\">" + key);
-                myTable = myTable.concat("<input type=\"checkbox\" myAnswer=\"" + value + "\">");
+                myTable = myTable.concat("<input type=\"checkbox\" mykey=\"" + key + "\" myAnswer=\"" + value + "\">");
                 myTable = myTable.concat("<span class=\"checkmark\"></span>");
                 myTable = myTable.concat("</label></td>");
                 if (i % 7 == 6) {
